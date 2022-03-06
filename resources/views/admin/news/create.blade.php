@@ -38,7 +38,7 @@
                     <div class="row">
                         <div class="col">
                             <label class="mb-2">{{trans('admin/news.new_notes')}}</label>
-                            <textarea class="form-control  @error('notes') is-invalid @enderror" rows="5" name="notes" required> {{old('notes')}} </textarea>
+                            <textarea class="form-control  @error('notes') is-invalid @enderror ckeditor1" rows="5" name="notes" required> {{old('notes')}} </textarea>
                             @error('notes')
                             <div class="alert alert-danger">{{$message}}</div>
                             @enderror
@@ -49,7 +49,7 @@
                     <div class="row">
                         <div class="col">
                             <label class="mb-2">{{trans('admin/news.new_notes_ar')}}</label>
-                            <textarea class="form-control  @error('notes_ar') is-invalid @enderror" rows="5" name="notes_ar" required> {{old('notes_ar')}} </textarea>
+                            <textarea class="form-control  @error('notes_ar') is-invalid @enderror ckeditor" rows="5" name="notes_ar" required> {{old('notes_ar')}} </textarea>
                             @error('notes_ar')
                             <div class="alert alert-danger">{{$message}}</div>
                             @enderror

@@ -44,7 +44,7 @@
                         <div class="row">
                             <div class="col">
                                 <label class="mb-2">{{ trans('admin/services.Service_notes') }}</label>
-                                <textarea class="form-control" rows="5" name="notes"> {{ $data->getTranslation('notes', 'en') }} </textarea>
+                                <textarea class="form-control ckeditor" rows="5" name="notes"> {{ $data->getTranslation('notes', 'en') }} </textarea>
                             </div>
                         </div>
 
@@ -52,7 +52,7 @@
                         <div class="row">
                             <div class="col">
                                 <label class="mb-2">{{ trans('admin/services.Service_notes_ar') }}</label>
-                                <textarea class="form-control" rows="5" name="notes_ar"> {{ $data->getTranslation('notes', 'ar') }} </textarea>
+                                <textarea class="form-control ckeditor1" rows="5" name="notes_ar"> {{ $data->getTranslation('notes', 'ar') }} </textarea>
                             </div>
                         </div>
 

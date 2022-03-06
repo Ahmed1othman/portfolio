@@ -35,7 +35,7 @@ class NavBarRequest extends FormRequest
             case 'POST':
             {
                 return [
-                    'title' => 'required|string|min:2|regex:/^[A-Za-z0-9-أ-ي-pL\s\-]+$/u'
+                    'title' => 'required|string|min:2|regex:/^[A-Za-z0-9-أ-ي-pL\s\-]+$/u',
                 ];
             }
             case 'PATCH':

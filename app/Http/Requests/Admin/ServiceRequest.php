@@ -30,20 +30,20 @@ class ServiceRequest extends FormRequest
                 }
             case 'POST': {
                     return [
-                        'title' => 'required|string|min:2|max:150|regex:/^[A-Za-z0-9-pL\s\-]+$/u|unique:services,title->en' . $this->id,
-                        'title_ar' => 'required|string|min:2|max:150|regex:/^[أ-ي-pL\s\-]+$/u|unique:services,title->ar' . $this->id,
-                        'notes' => 'required|string|min:2|regex:/^[A-Za-z0-9-pL\s\-]+$/u|unique:services,notes->en' . $this->id,
-                        'notes_ar' => 'required|string|min:2|regex:/^[0-9-أ-ي-pL\s\-]+$/u|unique:services,notes->ar' . $this->id,
+                        'title' => 'required|string|min:2|max:150|unique:services,title->en' . $this->id,
+                        'title_ar' => 'required|string|min:2|max:150|unique:services,title->ar' . $this->id,
+                        'notes' => 'required|string|min:2|unique:services,notes->en' . $this->id,
+                        'notes_ar' => 'required|string|min:2|unique:services,notes->ar' . $this->id,
                         'photo' => 'required|image|mimes:jpeg,bmp,png,jpg|max:4096'
                     ];
                 }
             case 'PATCH':
             case 'PUT': {
                     return [
-                        'title' => 'required|string|min:2|max:150|regex:/^[A-Za-z0-9-pL\s\-]+$/u|unique:services,title->en' . $this->id,
-                        'title_ar' => 'required|string|min:2|max:150|regex:/^[أ-ي-pL\s\-]+$/u|unique:services,title->ar' . $this->id,
-                        'notes' => 'required|string|min:2|regex:/^[A-Za-z0-9-pL\s\-]+$/u|unique:services,notes->en' . $this->id,
-                        'notes_ar' => 'required|string|min:2|regex:/^[0-9-أ-ي-pL\s\-]+$/u|unique:services,notes->ar' . $this->id,
+                        'title' => 'required|string|min:2|max:150|unique:services,title->en' . $this->id,
+                        'title_ar' => 'required|string|min:2|max:150|unique:services,title->ar' . $this->id,
+                        'notes' => 'required|string|min:2|unique:services,notes->en' . $this->id,
+                        'notes_ar' => 'required|string|min:2|unique:services,notes->ar' . $this->id,
                         'photo' => 'sometimes|image|mimes:jpeg,bmp,png,jpg|max:4096'
                     ];
                 }

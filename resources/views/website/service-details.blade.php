@@ -43,8 +43,8 @@
 
                 </div>
             </div>
-            <div class="col-12 p-b-20">
-                <img class="max-s-full m-b-30" src="{{ asset($row->image) }}" alt="IMG">
+            <div class="col-12 p-b-20 center">
+                <img class="max-s-full m-b-30 img-thumbnail" src="{{ asset($row->image) }}" alt="IMG" style="width: 350px; height: 350px">
             </div>
 
         </div>

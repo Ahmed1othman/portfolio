@@ -24,7 +24,7 @@
 
 									<div class="col-12">
 										<label for="text" class="form-label">{{ __('admin/app.text') }}</label>
-										<textarea class="form-control" name="text"  id="text" placeholder="{{ __('admin/app.text') }}"></textarea>
+										<textarea class="form-control ckeditor" name="text"  id="text" placeholder="{{ __('admin/app.text') }}"></textarea>
 									</div>
 									<div class="col-12">
                                         <div class="form-check form-switch">

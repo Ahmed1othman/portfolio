@@ -30,20 +30,20 @@ class NewsRequest extends FormRequest
                 }
             case 'POST': {
                     return [
-                        'title' => 'required|string|min:2|max:150|regex:/^[A-Za-z0-9-pL\s\-]+$/u|unique:news,title->en'. $this->id,
-                        'title_ar' => 'required|string|min:2|max:150|regex:/^[أ-ي-pL\s\-]+$/u|unique:news,title->ar'. $this->id,
-                        'notes' => 'required|string|min:2|regex:/^[A-Za-z0-9-pL\s\-]+$/u|unique:news,notes->en' . $this->id,
-                        'notes_ar' => 'required|string|min:2|regex:/^[0-9-أ-ي-pL\s\-]+$/u|unique:news,notes->ar' . $this->id,
+                        'title' => 'required|string|min:2|max:150|unique:news,title->en'. $this->id,
+                        'title_ar' => 'required|string|min:2|max:150|unique:news,title->ar'. $this->id,
+                        'notes' => 'required|string|min:2|unique:news,notes->en' . $this->id,
+                        'notes_ar' => 'required|string|min:2|unique:news,notes->ar' . $this->id,
                         'photo' => 'required|image|mimes:jpeg,bmp,png,jpg|max:4096'
                     ];
                 }
             case 'PATCH':
             case 'PUT': {
                     return [
-                        'title' => 'required|string|min:2|max:150|regex:/^[A-Za-z0-9-pL\s\-]+$/u|unique:news,title->en' . $this->id,
-                        'title_ar' => 'required|string|min:2|max:150|regex:/^[أ-ي-pL\s\-]+$/u|unique:news,title->ar' . $this->id,
-                        'notes' => 'required|string|min:2|regex:/^[A-Za-z0-9-pL\s\-]+$/u|unique:news,notes->en' .$this->id,
-                        'notes_ar' => 'required|string|min:2|regex:/^[0-9-أ-ي-pL\s\-]+$/u|unique:news,notes->ar' . $this->id,
+                        'title' => 'required|string|min:2|max:150|unique:news,title->en' . $this->id,
+                        'title_ar' => 'required|string|min:2|max:150|unique:news,title->ar' . $this->id,
+                        'notes' => 'required|string|min:2|unique:news,notes->en' .$this->id,
+                        'notes_ar' => 'required|string|min:2|unique:news,notes->ar' . $this->id,
                         'photo' => 'sometimes|image|mimes:jpeg,bmp,png,jpg|max:4096'
                     ];
                 }

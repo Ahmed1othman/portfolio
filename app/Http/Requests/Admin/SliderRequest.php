@@ -27,7 +27,7 @@ class SliderRequest extends FormRequest
             case 'POST':
             {
                 return [
-                    'title' => 'nullable|string|min:2|regex:/^[A-Za-z0-9-أ-ي-pL\s\-]+$/u',
+                    'title' => 'nullable|string|min:2',
                     'text' => 'nullable|string|min:2',
                     'photo'=>'required|image|mimes:jpeg,bmp,png|max:4096'
                 ];
@@ -36,7 +36,7 @@ class SliderRequest extends FormRequest
             case 'PUT':
             {
                 return [
-                    'title' => 'nullable|string|min:2|regex:/^[A-Za-z0-9-أ-ي-pL\s\-]+$/u',
+                    'title' => 'nullable|string|min:2',
                     'text' => 'nullable|string|min:2',
                     'photo'=>'sometimes|image|mimes:jpeg,bmp,png|max:4096'
                 ];
