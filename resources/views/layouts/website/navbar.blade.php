@@ -1,7 +1,7 @@
  <!-- Header -->
  <header>
      <!-- Header desktop -->
-     <nav class="container-header-desktop" style="font-family: 'Cairo', sans-serif;">
+     <nav class="container-header-desktop" style="font-family: {!! websiteInfo_hlp('font_family') !!};">
          <div class="top-bar">
              <div class="content-topbar container flex-sb-c h-full">
                  <div class="size-w-0 flex-wr-s-c">
@@ -62,13 +62,13 @@
                          @foreach (navbar_hlp() as $item)
 
                              <li>
-                                 <a href="{{ route($item->route) }}" style="font-family: 'Cairo', sans-serif;">  {{ __('site/app.'.$item->title) }}</a>
+                                 <a href="{{ route($item->route) }}" style="font-family: {!! websiteInfo_hlp('font_family') !!};">  {{ __('site/app.'.$item->title) }}</a>
 
                              </li>
                          @endforeach
 
-                             <li style="font-family: 'Cairo', sans-serif;">
-                                 <a href="#" style="font-family: 'Cairo', sans-serif;">{{trans('admin/news.lang')}}</a>
+                             <li style="font-family: {!! websiteInfo_hlp('font_family') !!};">
+                                 <a href="#" style="font-family: {!! websiteInfo_hlp('font_family') !!};">{{trans('admin/news.lang')}}</a>
                                  <ul class="sub-menu">
                                      @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
                                          <li>

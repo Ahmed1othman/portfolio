@@ -22,6 +22,7 @@ class InfoSeeder extends Seeder
         Info::create(['option' => 'website_name_ar','value' => 'أحمد عثمان','type' => 'string']);
         Info::create(['option' => 'logo_en','value' => 'logo.png','type' => 'image']);
         Info::create(['option' => 'logo_ar','value' => 'logo.png','type' => 'image']);
+        Info::create(['option' => 'show_logo','value' => '1','type' => 'check_box']);
         Info::create(['option' => 'about_image','value' => 'about.png','type' => 'image']);
         Info::create(['option' => 'services_image','value' => 'service.png','type' => 'image']);
         Info::create(['option' => 'projects_image','value' => 'projects.png','type' => 'image']);
@@ -39,12 +40,14 @@ class InfoSeeder extends Seeder
         Info::create(['option' => 'instagram_link','value' => '','type' => 'string']);
         Info::create(['option' => 'snapchat_link','value' => '','type' => 'string']);
         Info::create(['option' => 'youtube_link','value' => '','type' => 'string']);
-        Info::create(['option' => 'about_us_en','value' => '','type' => 'text']);
-        Info::create(['option' => 'about_us_ar','value' => '','type' => 'text']);
+        Info::create(['option' => 'about_us_en','value' => 'About US bla bla bla bla bla bla bla bla ...','type' => 'text']);
+        Info::create(['option' => 'about_us_ar','value' => 'بلااااابلااااابلااااامن نحن بلااااا ','type' => 'text']);
         Info::create(['option' => 'main_color','value' => '#05233a','type' => 'color']);
         Info::create(['option' => 'secondary_color','value' => '#16a086','type' => 'color']);
         Info::create(['option' => 'main_font_color','value' => '#05233a','type' => 'color']);
         Info::create(['option' => 'secondary_font_color','value' => '#16a086','type' => 'color']);
+        Info::create(['option' => 'font_family','value' => '\'Cairo\', sans-serif','type' => 'string']);
+        Info::create(['option' => 'font_url','value' => 'https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap','type' => 'string']);
         SliderOption::create(['image' => 'slidingoverlayhorizontal','word' => 'x:right']);
     }
 }

@@ -28,14 +28,19 @@
 
 <link href="{{ asset('admin/assets/plugins/notifications/css/lobibox.min.css') }}" rel="stylesheet"/>
 
+
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap" rel="stylesheet">
+{{--<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap" rel="stylesheet">--}}
 <style>
     .hide-secttion{
         display: none;
     }
 </style>
+
+
+<link href="{{ websiteInfo_hlp('font_url') }}" rel="stylesheet">
 
 <style>
     @keyframes loader08 {
@@ -175,10 +180,9 @@
     }
 
 
-    /************************************************/
-    /*main font color*/
-    /**************************************************/
-
+    body{
+        font-family: {!! websiteInfo_hlp('font_family') !!};
+    }
 
 
 </style>

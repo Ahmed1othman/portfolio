@@ -61,7 +61,6 @@ if (!function_exists('navbar_hlp')) {
                 $result[]=$row;
             }
         }
-
         return $result;
     }
 

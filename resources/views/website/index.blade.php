@@ -5,7 +5,7 @@
 @section('content')
     <!-- Slide -->
 
-    <section class="slider {{ showSection_hlp('slider') }}"style="font-family: 'Cairo', sans-serif;">
+    <section class="slider {{ showSection_hlp('slider') }}"style="font-family: {!! websiteInfo_hlp('font_family') !!};">
         <div class="rev_slider_wrapper fullwidthbanner-container">
             <div id="rev_slider_1" class="rev_slider fullwidthabanner" data-version="5.4.5" style="display:none">
                 <ul>
@@ -107,7 +107,7 @@
         <div class="container">
             <!-- Title section -->
             <div class="flex-col-c-c p-b-50">
-                <h3 class="t1-b-1 cl-3 txt-center m-b-11" style="font-family: 'Cairo', sans-serif;">
+                <h3 class="t1-b-1 cl-3 txt-center m-b-11" style="font-family: {!! websiteInfo_hlp('font_family') !!};">
                     {{__('site/app.services')}}
                 </h3>
 
@@ -115,7 +115,7 @@
             </div>
 
             <!--  -->
-            <div class="row justify-content-center" style="font-family: 'Cairo', sans-serif;">
+            <div class="row justify-content-center" style="font-family: {!! websiteInfo_hlp('font_family') !!};">
                 @foreach($services as $service)
                     <div class="col-sm-10 col-md-8 col-lg-4 p-b-40">
                         <div class="bg-10 h-full">
@@ -147,7 +147,7 @@
         <div class="container">
             <!-- Title section -->
             <div class="flex-col-c-c p-b-50">
-                <h3 class="t1-b-1 cl-3 txt-center m-b-11" style="font-family: 'Cairo', sans-serif;">
+                <h3 class="t1-b-1 cl-3 txt-center m-b-11" style="font-family: {!! websiteInfo_hlp('font_family') !!};">
                     {{ __('site/app.why_choose_us') }}
                 </h3>
 
@@ -155,7 +155,7 @@
             </div>
 
             <!--  -->
-            <div class="row justify-content-center" style="font-family: 'Cairo', sans-serif;">
+            <div class="row justify-content-center" style="font-family: {!! websiteInfo_hlp('font_family') !!};">
                 @foreach($features as $feature)
                     <div class="col-sm-10 col-md-6 col-lg-3 p-b-30">
                         <!-- Block1 -->
@@ -168,13 +168,13 @@
                                 </div>
 
                                 <h4 class="block1-title t1-m-1 text-uppercase cl-3 txt-center trans-04"
-                                    style="font-family: 'Cairo', sans-serif;">
+                                    style="font-family: {!! websiteInfo_hlp('font_family') !!};">
                                     {{$feature->title}}
                                 </h4>
                             </div>
 
                             <div class="block1-hide flex-col-c-c p-t-8 trans-04">
-                                <p class="t1-s-2 cl-12 txt-center p-b-26" style="font-family: 'Cairo', sans-serif;">
+                                <p class="t1-s-2 cl-12 txt-center p-b-26" style="font-family: {!! websiteInfo_hlp('font_family') !!};">
                                     {{$feature->notes}}
                                 </p>
 
@@ -202,39 +202,39 @@
                     </div>
 
                     <p class="t1-s-2 cl-0">
-                        {{__('site/app.Leave your information and email address. We will call back and advise you')}}
+                        {{__('site/app.Leave_your_information')}}
                     </p>
                 </div>
 
                 <form class="col-lg-8 p-b-30 p-t-8" action="{{route('orders')}}" method="post"
-                      style="font-family: 'Cairo', sans-serif;">
+                      style="font-family: {!! websiteInfo_hlp('font_family') !!};">
                     @csrf
                     <div class="row">
                         <div class="col-sm-6 p-b-25">
                             <div class="size-a-3">
                                 <input class="s-full bg-0 t1-m-2 cl-6 plh-6 p-rl-20" type="text" name="name"
-                                       placeholder="Your Name" id="call_name" required>
+                                       placeholder="{{__('site/app.Your Name')}}" id="call_name" required>
                             </div>
                         </div>
 
                         <div class="col-sm-6 p-b-25">
                             <div class="size-a-3">
                                 <input class="s-full bg-0 t1-m-2 cl-6 plh-6 p-rl-20" type="text" name="phone"
-                                       placeholder="Phone Number" id="call_phone" required>
+                                       placeholder="{{__('site/app.Phone Number')}}" id="call_phone" required>
                             </div>
                         </div>
 
                         <div class="col-sm-6 p-b-25">
                             <div class="size-a-3">
                                 <input class="s-full bg-0 t1-m-2 cl-6 plh-6 p-rl-20" type="email" id="call_email" name="email"
-                                       placeholder="Email" required>
+                                       placeholder="{{__('site/app.Email')}}" required>
                             </div>
                         </div>
 
                         <div class="col-sm-6 p-b-25">
                             <button type="button" onclick="request_call()"
                                 class="flex-c-c size-a-4 bg-11 t1-s-2 text-uppercase cl-0 hov-btn2 trans-02 p-rl-15">
-                                Submit
+                                {{__('site/app.Submit')}}
                             </button>
                         </div>
                     </div>
@@ -248,7 +248,7 @@
         <div class="container">
             <!-- Title section -->
             <div class="flex-col-c-c p-b-50">
-                <h3 class="t1-b-1 cl-3 txt-center m-b-11" style="font-family: 'Cairo', sans-serif;">
+                <h3 class="t1-b-1 cl-3 txt-center m-b-11" style="font-family: {!! websiteInfo_hlp('font_family') !!};">
                     المشاريع
                 </h3>
 
@@ -256,7 +256,7 @@
             </div>
 
             <!--  -->
-            <div class="row justify-content-center" style="font-family: 'Cairo', sans-serif;">
+            <div class="row justify-content-center" style="font-family: {!! websiteInfo_hlp('font_family') !!};">
                 @foreach($projects as $project)
                     <div class="col-sm-10 col-md-8 col-lg-4 p-b-40">
                         <!-- Block2 -->
@@ -264,11 +264,11 @@
                              style="background-image: url( {{asset($project->image)}});">
                             <div class="block2-content trans-04">
                                 <h4 class="block2-title t1-m-1 cl-0 flex-s-c trans-04"
-                                    style="font-family: 'Cairo', sans-serif;">
+                                    style="font-family: {!! websiteInfo_hlp('font_family') !!};">
                                     {{$project->title}}
                                 </h4>
 
-                                <p class="t1-s-2 cl-13 p-b-26" style="font-family: 'Cairo', sans-serif;">
+                                <p class="t1-s-2 cl-13 p-b-26" style="font-family: {!! websiteInfo_hlp('font_family') !!};">
                                     {{$project->notes}}
                                 </p>
                             </div>
@@ -328,7 +328,7 @@
         <div class="container">
             <!-- Title section -->
             <div class="flex-col-c-c p-b-50">
-                <h3 class="t1-b-1 cl-3 txt-center m-b-11" style="font-family: 'Cairo', sans-serif;">
+                <h3 class="t1-b-1 cl-3 txt-center m-b-11" style="font-family: {!! websiteInfo_hlp('font_family') !!};">
                     الاخبار
                 </h3>
 
@@ -336,7 +336,7 @@
             </div>
 
             <!--  -->
-            <div class="row justify-content-center" style="font-family: 'Cairo', sans-serif;">
+            <div class="row justify-content-center" style="font-family: {!! websiteInfo_hlp('font_family') !!};">
 
                 @foreach($news as $new)
                     <div class="col-sm-10 col-md-8 col-lg-4 p-b-40">
@@ -348,7 +348,7 @@
                             <div class="bg-0 p-rl-28 p-t-26 p-b-35">
                                 <h4 class="p-b-12">
                                     <button class="t1-m-1 cl-3 hov-link2 trans-02"
-                                            style="font-family: 'Cairo', sans-serif;">
+                                            style="font-family: {!! websiteInfo_hlp('font_family') !!};">
                                         {{$new->title}}
                                     </button>
                                 </h4>
@@ -364,7 +364,7 @@
 
                                 </div>
 
-                                <p class="t1-s-2 cl-6 p-b-20" style="font-family: 'Cairo', sans-serif;">
+                                <p class="t1-s-2 cl-6 p-b-20" style="font-family: {!! websiteInfo_hlp('font_family') !!};">
                                     {{$new->notes}}
                                 </p>
 
@@ -594,7 +594,7 @@
             <!-- Title section -->
             <div class="flex-col-c-c p-b-44">
                 <h3 class="t1-b-1 cl-3 txt-center m-b-11">
-                    Sign Up
+                    {{__('site/app.sign_up')}}
                 </h3>
 
                 <div class="size-a-2 bg-3"></div>

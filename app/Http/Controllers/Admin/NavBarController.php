@@ -95,7 +95,6 @@ class NavBarController extends Controller
      */
     public function update(NavBarRequest $request,$id)
     {
-
         $item=$this->repo->findOrFail($request->id);
         try {
             $data=[

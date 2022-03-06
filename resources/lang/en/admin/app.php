@@ -89,5 +89,13 @@ return [
     'back'=>'Back',
     'go_home'=>'Go Home',
     'type'=>'Type',
+    'about_us_en'=>'About Us by English',
+    'about_us_ar'=>'About Us by Arabic',
+    'main_color'=>'Site Main Color',
+    'secondary_color'=>'Site Secondary Color',
+    'main_font_color'=>'Site Main Font Color',
+    'secondary_font_color'=>'Site Secondary Font Color',
     'order_view'=>'View Order',
+    'font_family'=>'Font Family',
+    'font_url'=>'Font URL',
 ];

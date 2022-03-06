@@ -193,3 +193,8 @@
 
 <script src="{{asset('admin/assets/js/coloris.min.js')}}"></script>
 <!--app JS-->
+<style>
+    .clr-field{
+        width: 100% !important;
+    }
+</style>

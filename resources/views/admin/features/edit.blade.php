@@ -31,7 +31,7 @@
                             <div class="col">
                                 <label class="mb-2">{{ trans('admin/features.feature_name_ar') }}</label>
                                 <input type="text" name="title_ar"
-                                       class="form-control myInput_ar @error('title_ar') is-invalid @enderror"
+                                       class="form-control  @error('title_ar') is-invalid @enderror"
                                        value="{{ $data->getTranslation('title', 'ar') }}">
                                 @error('title_ar')
                                 <div class="alert alert-danger">{{ $message }}</div>

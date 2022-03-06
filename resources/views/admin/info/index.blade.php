@@ -47,6 +47,12 @@
                                     value="{{ old('value', $row->value  ) }}">
                             </div>
                         </div>
+                        @elseif ($row->type=='check_box')
+                        <div class="col-xl-8">
+                            <div class="form-group">
+
+                            </div>
+                        </div>
 
                         @elseif ($row->type=='color')
                             <div class="col-xl-8">

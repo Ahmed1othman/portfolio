@@ -6,7 +6,6 @@ return [
     'Home' => 'الصفحة الرئيسية',
     'open_marketing' => 'افتح التسويق',
     'sign_in' => 'تسجيل الدخول',
-    'sign_up' => 'اشتراك',
     'mazad' => 'مازاد',
     'buying_and_selling_information' => 'شراء وبيع المعلومات',
     'rest_information' => 'معلومات الراحة',
@@ -30,8 +29,19 @@ return [
     'news' => 'أخبار',
     'News' => 'أخبار',
     'news_details' => 'تفاصيل الخبر',
-
     'About Us' => 'من نحن',
     'Contact Us' => 'تواصل معانا',
 
+    'pages' => 'الصفحات',
+    'Email' => 'البريد الالكتروني',
+    'Your Name' => 'اسمك',
+    'Submit' => 'ارسال',
+    'Phone Number' => 'رقم الهاتف',
+
+    'Subscribe' => 'اشترك الان',
+
+    'sign_up'=>'اشترك معنا',
+    'why_choose_us' => 'لماذا تختارنا؟',
+    'Leave_your_information' => 'اترك بياناتك والبريد الالكتروني لك. وسوف نتواصل معك في اسرع وقت.',
+    'Request A Call Back' => 'تريد منا التواصل معك ؟',
 ];

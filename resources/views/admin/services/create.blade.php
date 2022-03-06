@@ -17,7 +17,7 @@
                             <div class="col">
                                 <label class="mb-2">{{trans('admin/services.Service_name')}}</label>
                                 <input type="text" name="title"
-                                       class="form-control myInput_en @error('title') is-invalid @enderror" required
+                                       class="form-control  @error('title') is-invalid @enderror" required
                                        value="{{old('title')}}">
                                 @error('title')
                                 <div class="alert alert-danger">{{$message}}</div>
@@ -27,7 +27,7 @@
                             <div class="col">
                                 <label class="mb-2">{{trans('admin/services.Service_name_ar')}}</label>
                                 <input type="text" name="title_ar"
-                                       class="form-control myInput_ar @error('title_ar') is-invalid @enderror" required
+                                       class="form-control  @error('title_ar') is-invalid @enderror" required
                                        value="{{old('title_ar')}}">
                                 @error('title_ar')
                                 <div class="alert alert-danger">{{$message}}</div>
@@ -42,7 +42,7 @@
                         <div class="row">
                             <div class="col">
                                 <label class="mb-2">{{trans('admin/services.Service_notes')}}</label>
-                                <textarea class="form-control myInput_en @error('notes') is-invalid @enderror" rows="5"
+                                <textarea class="form-control  @error('notes') is-invalid @enderror" rows="5"
                                           name="notes" required> {{old('notes')}} </textarea>
                                 @error('notes')
                                 <div class="alert alert-danger">{{$message}}</div>
@@ -54,7 +54,7 @@
                         <div class="row">
                             <div class="col">
                                 <label class="mb-2">{{trans('admin/services.Service_notes_ar')}}</label>
-                                <textarea class="form-control myInput_ar @error('notes_ar') is-invalid @enderror"
+                                <textarea class="form-control  @error('notes_ar') is-invalid @enderror"
                                           rows="5" name="notes_ar" required> {{old('notes_ar')}} </textarea>
                                 @error('notes_ar')
                                 <div class="alert alert-danger">{{$message}}</div>

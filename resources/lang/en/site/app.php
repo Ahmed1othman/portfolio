@@ -33,6 +33,12 @@ return [
     'Subscribe' => 'Subscribe',
     'news_details' => 'News Details',
     'why_choose_us' => 'Why Choose Us',
-    'Leave your information and email address. We will call back and advise you.' => 'Leave your information and email address. We will call back and advise you.',
+    'Leave_your_information' => 'Leave your information and email address. We will call back and advise you.',
     'Request A Call Back' => 'Request A Call Back',
+    'Contact Us'=>'Contact Us',
+
+    'Email' => 'Email',
+    'Your Name' => 'Your Name',
+    'Submit' => 'Submit',
+    'Phone Number' => 'Phone Number',
 ];

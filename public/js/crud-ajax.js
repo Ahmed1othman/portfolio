@@ -137,9 +137,12 @@ function activeSection(id) {
     var checkBox = document.getElementById("secttion_id_" + id);
     var active = 0;
 
+
     if (checkBox.checked == true) {
         active = 1;
     }
+
+    alert(active);
     $.ajax({
         headers: {
             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')

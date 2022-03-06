@@ -17,7 +17,7 @@
                             <div class="col">
                                 <label class="mb-2">{{ trans('admin/features.feature_name') }}</label>
                                 <input type="text" name="title"
-                                       class="form-control myInput_en @error('title') is-invalid @enderror" required
+                                       class="form-control  @error('title') is-invalid @enderror" required
                                        value="{{ old('title') }}">
                                 @error('title')
                                 <div class="alert alert-danger">{{ $message }}</div>
@@ -27,7 +27,7 @@
                             <div class="col">
                                 <label class="mb-2">{{ trans('admin/features.feature_name_ar') }}</label>
                                 <input type="text" name="title_ar"
-                                       class="form-control myInput_ar @error('title_ar') is-invalid @enderror" required
+                                       class="form-control  @error('title_ar') is-invalid @enderror" required
                                        value="{{ old('title_ar') }}">
                                 @error('title_ar')
                                 <div class="alert alert-danger">{{ $message }}</div>
@@ -42,7 +42,7 @@
                         <div class="row">
                             <div class="col">
                                 <label class="mb-2">{{ trans('admin/features.feature_notes') }}</label>
-                                <textarea class="form-control myInput_en" rows="5" name="notes"
+                                <textarea class="form-control " rows="5" name="notes"
                                           required>{{old('notes')}}</textarea>
                             </div>
                             @error('notes')
@@ -56,7 +56,7 @@
                         <div class="row">
                             <div class="col">
                                 <label class="mb-2">{{ trans('admin/features.feature_notes_ar') }}</label>
-                                <textarea class="form-control myInput_ar" rows="5" name="notes_ar"
+                                <textarea class="form-control " rows="5" name="notes_ar"
                                           required>{{old('notes_ar')}}</textarea>
                             </div>
                             @error('notes_ar')
