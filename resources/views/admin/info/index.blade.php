@@ -42,7 +42,7 @@
                         @elseif ($row->type=='string')
                         <div class="col-xl-8">
                             <div class="form-group">
-                                <input type="text" class="form-control" name="value" required
+                                <input type="text" class="form-control ckeditor" name="value" required
                                     placeholder="{{__('admin/app.'.$row->option)}}"
                                     value="{{ old('value', $row->value  ) }}">
                             </div>
