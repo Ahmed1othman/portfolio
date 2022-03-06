@@ -42,7 +42,7 @@
                         @elseif ($row->type=='string')
                         <div class="col-xl-8">
                             <div class="form-group">
-                                <input type="text" class="form-control ckeditor" name="value" required
+                                <input type="text" class="form-control" name="value" required
                                     placeholder="{{__('admin/app.'.$row->option)}}"
                                     value="{{ old('value', $row->value  ) }}">
                             </div>
@@ -65,7 +65,7 @@
 
                         <div class="col-xl-8">
                             <div class="form-group">
-                                <textarea id="{{ $row->option }}" name="value" class="form-control" rows="3">{{ $row->value }}</textarea>
+                                <textarea id="{{ $row->option }}" name="value" class="form-control ckeditor" rows="3" placeholder="{{__('admin/app.about_us')}}">{{ $row->value }}</textarea>
                             </div>
                         </div>
                         @endif
