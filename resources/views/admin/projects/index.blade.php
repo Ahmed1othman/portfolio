@@ -22,7 +22,6 @@
                             <tr>
                                 <th>#</th>
                                 <th>{{trans('admin/projects.title')}}</th>
-                                <th>{{trans('admin/projects.notes')}}</th>
                                 <th>{{trans('admin/projects.active')}}</th>
                                 <th>{{trans('admin/projects.photo')}}</th>
                                 <th>{{trans('admin/projects.Action')}}</th>
@@ -33,9 +32,6 @@
                             <tr id="row_{{$row->id}}">
                                 <td>{{$loop->iteration}}</td>
                                 <td>{{$row->title}}</td>
-                                <td>
-                                    <p>{{$row->notes}}</p>
-                                </td>
                                 <td>{!! $row->active==1?'<i class="bx bx-check-circle text-success"
                                         aria-hidden="true"></i>':'<i class="bx bx-error text-danger"
                                         aria-hidden="true"></i>'!!}</td>

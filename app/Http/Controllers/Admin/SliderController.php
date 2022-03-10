@@ -57,8 +57,8 @@ class SliderController extends Controller
     {
       try {
             $data=[
-                'title' => $request->title,
-                'text' => $request->text
+                'title' => ['en' =>$request->title, 'ar' => $request->title_ar],
+                'text' => ['en' => $request->text, 'ar' => $request->text_ar]
             ];
             if($request->active){
                 $data['active']=1;
@@ -107,8 +107,8 @@ class SliderController extends Controller
         $item=$this->repo->findOrFail($request->id);
         try {
             $data=[
-                'title' => $request->title,
-                'text' => $request->text
+                'title' => ['en' =>$request->title, 'ar' => $request->title_ar],
+                'text' => ['en' => $request->text, 'ar' => $request->text_ar]
             ];
             if($request->active){
                 $data['active']=1;

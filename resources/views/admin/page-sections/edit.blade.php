@@ -65,7 +65,7 @@
 
                                             @if($row->type == 'text')
                                             <div id="section_type_content_translated_ar">
-                                                <div class="col-12"> <label for="text_ar" class="form-label">{{ __('admin/app.text') }}</label><div id="toolbar-container_ar"></div> <textarea class="form-control ckeditor1" name="text_ar" placeholder="{{ __('admin/app.text') }}">{{ $row->text_ar}}</textarea> </div>
+                                                <div class="col-12"> <label for="text_ar" class="form-label">{{ __('admin/app.text') }}</label><div id="toolbar-container_ar"></div> <textarea class="form-control ckeditor" name="text_ar" placeholder="{{ __('admin/app.text') }}">{{ $row->text_ar}}</textarea> </div>
                                             </div>
                                             @endif
                                         </div>

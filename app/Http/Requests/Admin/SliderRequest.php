@@ -28,7 +28,9 @@ class SliderRequest extends FormRequest
             {
                 return [
                     'title' => 'nullable|string|min:2',
+                    'title_ar' => 'nullable|string|min:2',
                     'text' => 'nullable|string|min:2',
+                    'text_ar' => 'nullable|string|min:2',
                     'photo'=>'required|image|mimes:jpeg,bmp,png|max:4096'
                 ];
             }
@@ -36,8 +38,10 @@ class SliderRequest extends FormRequest
             case 'PUT':
             {
                 return [
-                    'title' => 'nullable|string|min:2',
+                    'title' => 'nullable|string|min:2|max:150',
                     'text' => 'nullable|string|min:2',
+                    'title_ar' => 'nullable|string|min:2|max:150',
+                    'text_ar' => 'nullable|string|min:2',
                     'photo'=>'sometimes|image|mimes:jpeg,bmp,png|max:4096'
                 ];
             }
@@ -50,6 +54,8 @@ class SliderRequest extends FormRequest
         return [
             'title.required' => __('admin/app.title_required'),
             'text.required' => __('admin/app.text_required'),
+            'title.required_ar' => __('admin/app.title_required'),
+            'text.required_ar' => __('admin/app.text_required'),
             'photo.required' => __('admin/app.photo_required'),
             'photo.image' => __('admin/app.photo_should_be_image')
         ];

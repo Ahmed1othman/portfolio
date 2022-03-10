@@ -32,7 +32,7 @@
                                 <td>{{$loop->iteration}}</td>
                                 <td>{{$row->title}}</td>
                                 <td>{{$row->text}}</td>
-                                <td>{!! $row->active==1?'<i class="fa fa-check-circle text-success" aria-hidden="true"></i>':'<i class="fa fa-times-circle text-danger" aria-hidden="true"></i>'!!}</td>
+                                <td>{!! $row->active==1?'<i class="bx bx-check-circle text-success" aria-hidden="true"></i>':'<i class="bx bx-error text-danger" aria-hidden="true"></i>'!!}</td>
                                 <td>
                                     @if ($row->image)
                                     <a href="{{asset($row->image)}}" data-fancybox="group2">

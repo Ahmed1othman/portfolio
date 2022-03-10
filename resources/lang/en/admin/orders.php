@@ -2,9 +2,9 @@
 
 return [
 
-    'orders' => 'الطلبات',
-    'name' => 'name',
-    'email' => 'email',
-    'phone' => 'phone',
+    'orders' => 'Orders',
+    'name' => 'Name',
+    'email' => 'Email',
+    'phone' => 'Phone',
     'Action' => 'Action',
 ];

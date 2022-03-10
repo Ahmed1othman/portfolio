@@ -56,7 +56,7 @@
                         <div class="row">
                             <div class="col">
                                 <label class="mb-2">{{ trans('admin/features.feature_notes_ar') }}</label>
-                                <textarea class="form-control ckeditor1" rows="5" name="notes_ar"
+                                <textarea class="form-control ckeditor" rows="5" name="notes_ar"
                                           required>{{old('notes_ar')}}</textarea>
                             </div>
                             @error('notes_ar')

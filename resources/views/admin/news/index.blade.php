@@ -22,7 +22,6 @@
                             <tr>
                                 <th>#</th>
                                 <th> {{trans('admin/news.title')}}</th>
-                                <th> {{trans('admin/news.notes')}}</th>
                                 <th> {{trans('admin/news.active')}}</th>
                                 <th> {{trans('admin/news.photo')}}</th>
                                 <th> {{trans('admin/news.photo')}}</th>
@@ -33,7 +32,6 @@
                                 <tr id="row_{{$row->id}}">
                                     <td>{{$loop->iteration}}</td>
                                     <td>{{$row->title}}</td>
-                                    <td>{{$row->notes}}</td>
                                     <td>{!! $row->active==1?'<i class="bx bx-check-circle text-success" aria-hidden="true"></i>':'<i class="bx bx-error text-danger" aria-hidden="true"></i>'!!}</td>
                                     <td>
                                         @if ($row->image)

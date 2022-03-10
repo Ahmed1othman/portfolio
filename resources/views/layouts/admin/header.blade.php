@@ -62,3 +62,16 @@
     }
 </style>
 <link rel="stylesheet" type="text/css" href="{{asset('admin/assets/css/coloris.min.css')}}">
+
+
+<script src="{{asset('assets/ckeditor4/ckeditor/ckeditor.js')}}"></script>
+<script>
+    function ckeditor(){
+        CKEDITOR.replace( '.ckeditor',{
+
+        } );
+        CKEDITOR.add
+    }
+
+    ckeditor()
+</script>

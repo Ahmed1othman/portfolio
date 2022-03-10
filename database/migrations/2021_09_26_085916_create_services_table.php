@@ -15,8 +15,8 @@ class CreateServicesTable extends Migration
     {
         Schema::create('services', function (Blueprint $table) {
             $table->id();
-            $table->string('title',150);
-            $table->text('notes')->nullable();
+            $table->string('title');
+            $table->longText('notes')->nullable();
             $table->string('photo');
             $table->boolean('active')->default(true);
             $table->softDeletes();

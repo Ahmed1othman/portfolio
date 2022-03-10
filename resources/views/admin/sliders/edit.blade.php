@@ -19,14 +19,35 @@
                                     @csrf
                                     <input type="hidden" name="_method" value="PUT">
                                     <input type="hidden" name="id" id="id" value="{{$row->id}}">
-									<div class="col-md-12">
-										<label for="title" class="form-label">{{ __('admin/app.title') }}</label>
-										<input type="text" name="title" value="{{$row->title}}" class="form-control" id="title">
+                                    <div class="col-md-6">
+                                        <label for="title" class="form-label">{{ __('admin/sliders.title') }}</label>
+                                        <input type="text" name="title" value="{{ $row->getTranslation('title', 'en') }}" class="form-control @error('title') is-invalid @enderror" id="title">
+                                        @error('title')
+                                        <div class="alert alert-danger">{{$message}}</div>
+                                        @enderror
+                                    </div>
+									<div class="col-md-6">
+										<label for="title_ar" class="form-label">{{ __('admin/sliders.title_ar') }}</label>
+										<input type="text" name="title_ar" value="{{ $row->getTranslation('title', 'ar') }}" class="form-control @error('title_ar') is-invalid @enderror" id="title_ar">
+                                        @error('title_ar')
+                                        <div class="alert alert-danger">{{$message}}</div>
+                                        @enderror
 									</div>
 
+
+                                    <div class="col-12">
+                                        <label for="text" class="form-label">{{ __('admin/sliders.text') }}</label>
+                                        <textarea class="form-control ckeditor @error('text') is-invalid @enderror" value="" name="text"  id="text" placeholder="{{ __('admin/app.text_ar') }}">{{ $row->getTranslation('text', 'en') }}</textarea>
+                                        @error('text')
+                                        <div class="alert alert-danger">{{$message}}</div>
+                                        @enderror
+                                    </div>
 									<div class="col-12">
-										<label for="text" class="form-label">{{ __('admin/app.text') }}</label>
-										<textarea class="form-control ckeditor" value="" name="text"  id="text" placeholder="{{ __('admin/app.text') }}">{{ $row->text }}</textarea>
+										<label for="text_ar" class="form-label">{{ __('admin/sliders.text_ar') }}</label>
+										<textarea class="form-control ckeditor @error('text_ar') is-invalid @enderror" value="" name="text_ar"  id="text_ar" placeholder="{{ __('admin/app.text_ar') }}">{{ $row->getTranslation('text', 'ar') }}</textarea>
+                                        @error('text_ar')
+                                        <div class="alert alert-danger">{{$message}}</div>
+                                        @enderror
 									</div>
 									<div class="col-12">
                                         <div class="form-check form-switch">

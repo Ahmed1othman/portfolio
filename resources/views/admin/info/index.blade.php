@@ -9,7 +9,7 @@
         <div class="card">
 
             <div class="card-body">
-                @php($i = 0)
+
                 @foreach ($data as $row)
                 <form class="kt-form" id="kt_form" method="post" action="{{route('info.update',[$row->id])}}"
                     enctype="multipart/form-data">
@@ -64,7 +64,7 @@
                         @elseif ($row->type=='text')
                         <div class="col-xl-8">
                             <div class="form-group">
-                                <textarea id="{{ $row->option }}" name="value" class="form-control {{$i++ == 1?'ckeditor1':'ckeditor'}}" rows="3" placeholder="{{__('admin/app.about_us')}}">{{ $row->value }}</textarea>
+                                <textarea id="{{ $row->option }}" name="value" class="form-control ckeditor" rows="3" placeholder="{{__('admin/app.about_us')}}">{{ $row->value }}</textarea>
                             </div>
                         </div>
                         @endif

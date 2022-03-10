@@ -14,7 +14,6 @@
 
                         <li data-transition="{{ $slideroption->image }}">
                             <img src="{{ asset($slider->image)}}" alt="IMG-SLIDE" class="rev-slidebg">
-
                             <h2 class="tp-caption tp-resizeme caption-1 text-uppercase"
                                 data-frames='[{"delay":500,"speed":1500,"frame":"0","from":"{{ $slideroption->word }};","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
                                 data-visibility="['on', 'on', 'on', 'on']" data-fontsize="['48', '48', '48', '38']"
@@ -27,7 +26,6 @@
                                 data-paddingright="[15, 15, 15, 15]" data-paddingbottom="[0, 0, 0, 0]"
                                 data-paddingleft="[15, 15, 15, 15]" data-basealign="slide" data-responsive_offset="off">
                                 {{$slider->title}}</h2>
-
                             <span class="tp-caption tp-resizeme caption-2"
                                data-frames='[{"delay":1500,"speed":1500,"frame":"0","from":"{{ $slideroption->word }};","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
                                data-visibility="['on', 'on', 'on', 'on']"
@@ -42,57 +40,6 @@
                                 {!! $slider->text !!}
 
                             </span>
-                        </li>
-                        <li data-transition="slidingoverlayhorizontal">
-                            <img src="{{ asset($slider->image)}}" alt="IMG-SLIDE" class="rev-slidebg">
-
-                            <h2 class="tp-caption tp-resizeme caption-1 text-uppercase"
-                                data-frames='[{"delay":500,"speed":1500,"frame":"0","from":"{{ $slideroption->word }};","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-                                data-visibility="['on', 'on', 'on', 'on']" data-fontsize="['48', '48', '48', '38']"
-                                data-lineheight="['58', '58', '58', '58']" data-color="['#FFF']"
-                                data-textAlign="['center', 'center', 'center', 'center']" data-x="['center']"
-                                data-y="['center']" data-hoffset="['0', '0', '0', '0']"
-                                data-voffset="['-83', '-83', '-83', '-93']" data-width="['1200','992','768','480']"
-                                data-height="['auto', 'auto', 'auto', 'auto']" data-whitespace="['normal']"
-                                data-paddingtop="[0, 0, 0, 0]"
-                                data-paddingright="[15, 15, 15, 15]" data-paddingbottom="[0, 0, 0, 0]"
-                                data-paddingleft="[15, 15, 15, 15]" data-basealign="slide"
-                                data-responsive_offset="off">{{ $slider->title }}</h2>
-
-                            <span class="tp-caption tp-resizeme caption-2"
-                               data-frames='[{"delay":1500,"speed":1500,"frame":"0","from":"{{ $slideroption->word }};","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-                               data-visibility="['on', 'on', 'on', 'on']"
-                               data-fontsize="['30', '30', '30', '25']" data-lineheight="['39', '39', '39', '39']"
-                               data-color="['#FFF']" data-textAlign="['center', 'center', 'center', 'center']"
-                               data-x="['center']" data-y="['center']" data-hoffset="['0', '0', '0', '0']"
-                               data-voffset="['-13', '-13', '-13', '-13']" data-width="['1200','992','768','480']"
-                               data-height="['auto', 'auto', 'auto', 'auto']" data-whitespace="['normal']"
-                               data-paddingtop="[0, 0, 0, 0]" data-paddingright="[15, 15, 15, 15]"
-                               data-paddingbottom="[0, 0, 0, 0]" data-paddingleft="[15, 15, 15, 15]"
-                               data-basealign="slide" data-responsive_offset="off">
-                                {!! $slider->text !!}
-                        </span>
-
-                            <div class="tp-caption tp-resizeme caption-3 flex-wr-c-c d-flex"
-                                 data-frames='[{"delay":3000,"speed":1500,"frame":"0","from":"y:bottom;rX:-20deg;rY:-20deg;rZ:0deg;","to":"o:1;","ease":"Power3.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-                                 data-x="['center']" data-y="['center']" data-hoffset="['0', '0', '0', '0']"
-                                 data-voffset="['88', '88', '88', '88']" data-width="['1200','992','768','480']"
-                                 data-height="['auto']" data-paddingtop="[0, 0, 0, 0]"
-                                 data-paddingright="[10, 10, 10, 10]"
-                                 data-paddingbottom="[0, 0, 0, 0]" data-paddingleft="[10, 10, 10, 10]"
-                                 data-basealign="slide" data-responsive_offset="off">
-                            </div>
-
-                                <div class="tp-caption tp-resizeme caption-3 flex-wr-c-c d-flex"
-                                     data-frames='[{"delay":3000,"speed":1500,"frame":"0","from":"y:bottom;rX:-20deg;rY:-20deg;rZ:0deg;","to":"o:1;","ease":"Power3.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-                                     data-x="['center']" data-y="['center']" data-hoffset="['0', '0', '0', '0']"
-                                     data-voffset="['88', '88', '88', '88']" data-width="['1200','992','768','480']"
-                                     data-height="['auto']" data-paddingtop="[0, 0, 0, 0]"
-                                     data-paddingright="[10, 10, 10, 10]"
-                                     data-paddingbottom="[0, 0, 0, 0]" data-paddingleft="[10, 10, 10, 10]"
-                                     data-basealign="slide" data-responsive_offset="off">
-
-                                </div>
                         </li>
                 @endforeach
 

@@ -61,7 +61,7 @@
                                             </div>
 
                                             <div id="section_type_content_translated_ar">
-                                                <div class="col-12"> <label for="text_ar" class="form-label">{{ __('admin/app.text') }}</label><div id="toolbar-container_ar"></div> <textarea class="form-control ckeditor1" name="text_ar" placeholder="{{ __('admin/app.text') }}"></textarea> </div>
+                                                <div class="col-12"> <label for="text_ar" class="form-label">{{ __('admin/app.text') }}</label><div id="toolbar-container_ar"></div> <textarea class="form-control ckeditor" name="text_ar" placeholder="{{ __('admin/app.text') }}"></textarea> </div>
                                             </div>
                                         </div>
                                     </div>
@@ -132,9 +132,12 @@
         }
         else{
             section_content_translated_en.innerHTML ='<div class="col-12"> <label for="text_en" class="form-label">{{ __('admin/app.text') }}</label><div id="toolbar-container_en"></div> <textarea class="form-control ckeditor" name="text_en" placeholder="{{ __('admin/app.text') }}"></textarea> </div>'
-            section_content_translated_ar.innerHTML ='<div class="col-12"> <label for="text_ar" class="form-label">{{ __('admin/app.text') }}</label><div id="toolbar-container_ar"></div> <textarea class="form-control ckeditor1" name="text_ar" placeholder="{{ __('admin/app.text') }}"></textarea> </div>'
-            editor();
-            editor1();
+            section_content_translated_ar.innerHTML ='<div class="col-12"> <label for="text_ar" class="form-label">{{ __('admin/app.text') }}</label><div id="toolbar-container_ar"></div> <textarea class="form-control ckeditor" name="text_ar" placeholder="{{ __('admin/app.text') }}"></textarea> </div>'
+            function ckeditor(){
+                CKEDITOR.replace( '.ckeditor',{
+                } );
+                CKEDITOR.add
+            }
     }
     }
 </script>
