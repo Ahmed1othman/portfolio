@@ -16,7 +16,7 @@ class CreateProjectsTable extends Migration
         Schema::create('projects', function (Blueprint $table) {
             $table->id();
             $table->string('title',150);
-            $table->text('notes')->nullable();
+            $table->longText('notes')->nullable();
             $table->string('photo');
             $table->boolean('active')->default(true);
             $table->softDeletes();

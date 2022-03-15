@@ -6,7 +6,7 @@
 
                    <div class="size-h-1 flex-s-e p-b-6 m-b-18">
                        <a href="#">
-                           <img class="max-s-full" src="{{ asset('storage/front/'.websiteInfo_hlp('logo'))}}" alt="{{ websiteInfo_hlp('website_name') }}">
+                           <img class="max-s-full" src="{{ asset('storage/front/' . websiteInfo_hlp('logo_'.App::getLocale())) }}" alt="{{ websiteInfo_hlp('website_name_'.App::getLocale()) }}">
                        </a>
                    </div>
 
@@ -48,7 +48,7 @@
                             </span>
 
                             <span class="size-w-4">
-                                {{ websiteInfo_hlp('address') }}
+                                {{ websiteInfo_hlp('address_'.App::getLocale()) }}
                             </span>
                         </li>
 
@@ -93,8 +93,6 @@
                         @endforeach
                     </div>
                 </div>
-
-
             </div>
         </div>
     </div>
