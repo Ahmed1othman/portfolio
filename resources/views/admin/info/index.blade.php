@@ -65,7 +65,7 @@
                                 <div class="form-group">
                                     <input class="form-check-input" name="show_logo" value="1" type="checkbox"
                                            id="flexSwitchCheckChecked" {{ $row->value == true ? 'checked' : '' }}>
-                                    <label class="form-check-label" for="flexSwitchCheckChecked">Show Logo</label>
+                                    <label class="form-check-label" for="flexSwitchCheckChecked">{{__('admin/app.show_logo')}}</label>
                                 </div>
                             </div>
 

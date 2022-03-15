@@ -1,4 +1,13 @@
  <!-- Header -->
+
+ <style>
+     .one h1 {
+         text-align: center;
+         text-transform: uppercase;
+         font-size: 25px;
+     }
+
+ </style>
  <header>
      <!-- Header desktop -->
      <nav class="container-header-desktop" style="font-family: {!! websiteInfo_hlp('font_family') !!};">
@@ -48,9 +57,14 @@
                  <!-- Logo desktop -->
                  <div class="logo">
                      <a href="{{ route('home') }}">
-                         @if (websiteInfo_hlp('logo_'.App::getLocale()))
+                         @if (websiteInfo_hlp('logo_'.App::getLocale()) && websiteInfo_hlp('show_logo'))
                              <img src="{{ asset('storage/front/' . websiteInfo_hlp('logo_'.App::getLocale())) }}"
                                  alt="{{ websiteInfo_hlp('website_name_'.App::getLocale()) }}" >
+                         @else
+
+                             <div class="one">
+                                 <h1>{{websiteInfo_hlp('website_name_'.App::getLocale())}}</h1>
+                             </div>
                          @endif
                      </a>
                  </div>

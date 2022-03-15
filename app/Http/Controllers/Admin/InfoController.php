@@ -82,9 +82,22 @@ class InfoController extends Controller
     public function update(InfoRequest $request, $id)
     {
 
+
         $row = [];
         try{
             $front = $this->repo->findOrFail($id);
+            if ($front->option == 'show_logo'){
+                if($request->has('show_logo'))
+                    $row['value'] = true;
+                else
+                    $row['value'] = false;
+
+                $data = $this->repo->update($row, $front);
+                if ($data) {
+                    session()->flash('Add', __('admin/app.success_message'));
+                    return redirect('info');
+                }
+            }
 
             if(request()->hasFile('value')) {
                 $file = request()->file('value');
@@ -97,6 +110,7 @@ class InfoController extends Controller
             }else{
                 $row['value']=$request->value;
             }
+
 
 
             $data = $this->repo->update($row, $front);
