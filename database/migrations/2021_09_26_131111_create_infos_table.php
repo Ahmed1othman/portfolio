@@ -16,7 +16,7 @@ class CreateInfosTable extends Migration
         Schema::create('infos', function (Blueprint $table) {
             $table->id();
             $table->string('option')->nullable();
-            $table->string('value')->nullable();
+            $table->longText('value')->nullable();
             $table->string('type')->default('string');
             $table->boolean('active')->default(true);
             $table->softDeletes();

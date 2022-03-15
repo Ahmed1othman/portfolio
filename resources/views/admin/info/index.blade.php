@@ -60,6 +60,14 @@
                                     <input type="text" class="coloris form-control" name="value" value="{{old('value',$row->value)}}" data-coloris style="text-align: left"/>
                                 </div>
                             </div>
+                        @elseif ($row->type=='checkbox'&&$row->option == 'show_logo')
+                            <div class="col-xl-8">
+                                <div class="form-group">
+                                    <input class="form-check-input" name="show_logo" value="1" type="checkbox"
+                                           id="flexSwitchCheckChecked" {{ $row->value == true ? 'checked' : '' }}>
+                                    <label class="form-check-label" for="flexSwitchCheckChecked">Show Logo</label>
+                                </div>
+                            </div>
 
                         @elseif ($row->type=='text')
                         <div class="col-xl-8">

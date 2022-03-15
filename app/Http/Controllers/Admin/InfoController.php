@@ -15,6 +15,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
 use Illuminate\Support\Facades\File as FacadesFile;
+use phpDocumentor\Reflection\PseudoTypes\NonEmptyLowercaseString;
 
 class InfoController extends Controller
 {
@@ -81,6 +82,7 @@ class InfoController extends Controller
     public function update(InfoRequest $request, $id)
     {
 
+        $row = [];
         try{
             $front = $this->repo->findOrFail($id);
 
@@ -90,18 +92,19 @@ class InfoController extends Controller
                     FacadesFile::delete('public/front/' . $front->value);
                     $fileName = time() . rand(0, 999999999) . '.' . $file->getClientOriginalExtension();
                     $file->storeAs('public/front', $fileName);
-                    $input['value'] =  $fileName;
+                    $row['value'] =  $fileName;
                 }
             }else{
-                $input['value']=$request->value;
+                $row['value']=$request->value;
             }
 
 
-            $data = $this->repo->update($input, $front);
+            $data = $this->repo->update($row, $front);
             if ($data) {
                 session()->flash('Add', __('admin/app.success_message'));
                 return redirect('info');
             }
+
         } catch (\Exception $e) {
             DB::rollback();
             session()->flash('danger', __('admin/app.some_thing_error'));

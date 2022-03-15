@@ -47,7 +47,6 @@
              <div class="limiter-menu-desktop container">
                  <!-- Logo desktop -->
                  <div class="logo">
-
                      <a href="{{ route('home') }}">
                          @if (websiteInfo_hlp('logo_'.App::getLocale()))
                              <img src="{{ asset('storage/front/' . websiteInfo_hlp('logo_'.App::getLocale())) }}"
@@ -117,7 +116,7 @@
          <div class="wrap-header-mobile">
              <!-- Logo moblie -->
              <div class="logo-mobile">
-                 <a href="index.html"><img src="{{ asset('website/images/icons/logo-01.png') }}" alt="LOGO"></a>
+                 <a href="{{route('home')}}"><img src="{{ asset('storage/front/' . websiteInfo_hlp('logo_'.App::getLocale())) }}" alt="LOGO" style="{{App::getLocale()=='ar'? 'right:0;left:100%':''}}"></a>
              </div>
 
 
@@ -136,7 +135,7 @@
                          <span class="fs-16 m-r-6">
                              <i class="fa fa-home" aria-hidden="true"></i>
                          </span>
-                         <span>379 5Th Ave New York, Nyc 10018</span>
+                         <span>{{ websiteInfo_hlp('address_'.App::getLocale())}}</span>
                      </div>
                  </li>
 
@@ -145,39 +144,27 @@
                          <span class="fs-16 m-r-6">
                              <i class="fa fa-phone" aria-hidden="true"></i>
                          </span>
-                         <span>(+1) 96 716 6879</span>
+                         <span>{{ websiteInfo_hlp('phone')}}</span>
                      </div>
                  </li>
 
-                 <li>
-                     <div class="t1-s-1 cl-5 p-tb-3">
-                         <span class="fs-16 m-r-6">
-                             <i class="fa fa-clock-o" aria-hidden="true"></i>
-                         </span>
-                         <span>Mon-Sat 09:00 am - 17:00 pm/Sunday CLOSE</span>
-                     </div>
-                 </li>
 
                  <li>
                      <div>
                          <a href="#" class="fs-16 cl-5 hov-link2 trans-02 m-r-15">
-                             <i class="fa fa-facebook-official"></i>
+                             <i class="fa fa-facebook-official">{{ websiteInfo_hlp('facebook_link') }}</i>
                          </a>
 
                          <a href="#" class="fs-16 cl-5 hov-link2 trans-02 m-r-15">
-                             <i class="fa fa-twitter"></i>
+                             <i class="fa fa-twitter">{{ websiteInfo_hlp('twitter_link') }}</i>
                          </a>
 
                          <a href="#" class="fs-16 cl-5 hov-link2 trans-02 m-r-15">
-                             <i class="fa fa-google-plus"></i>
+                             <i class="fa fa-instagram">{{ websiteInfo_hlp('instagram_link') }}</i>
                          </a>
 
                          <a href="#" class="fs-16 cl-5 hov-link2 trans-02 m-r-15">
-                             <i class="fa fa-instagram"></i>
-                         </a>
-
-                         <a href="#" class="fs-16 cl-5 hov-link2 trans-02 m-r-15">
-                             <i class="fa fa-linkedin"></i>
+                             <i class="fa fa-linkedin">{{ websiteInfo_hlp('linked_link') }}</i>
                          </a>
                      </div>
                  </li>

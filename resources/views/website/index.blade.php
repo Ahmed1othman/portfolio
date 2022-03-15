@@ -66,20 +66,16 @@
                 @foreach($services as $service)
                     <div class="col-sm-10 col-md-8 col-lg-4 p-b-40">
                         <div class="bg-10 h-full">
-                            <a href="{{asset($service->image)}}" class="hov-img0 of-hidden bg-0">
+                            <a href="{{ route('service.details',$service->id) }}" class="hov-img0 of-hidden bg-0">
                                 <img src="{{asset($service->image)}}" alt="IMG">
                             </a>
 
                             <div class="p-rl-30 p-t-26 p-b-20">
                                 <h4 class="p-b-9">
-                                    <a href="services-detail-01.html" class="t1-m-1 cl-0 hov-link2 trans-02">
+                                    <a href="{{ route('service.details',$service->id) }}" class="t1-m-1 cl-0 hov-link2 trans-02">
                                         {{$service->title}}
                                     </a>
                                 </h4>
-
-                                <p class="t1-s-2 cl-13">
-                                    {{$service->notes}}
-                                </p>
                             </div>
                         </div>
                     </div>
@@ -118,13 +114,6 @@
                                     style="font-family: {!! websiteInfo_hlp('font_family') !!};">
                                     {{$feature->title}}
                                 </h4>
-                            </div>
-
-                            <div class="block1-hide flex-col-c-c p-t-8 trans-04">
-                                <p class="t1-s-2 cl-12 txt-center p-b-26" style="font-family: {!! websiteInfo_hlp('font_family') !!};">
-                                    {{$feature->notes}}
-                                </p>
-
                             </div>
                         </div>
                     </div>
@@ -196,7 +185,7 @@
             <!-- Title section -->
             <div class="flex-col-c-c p-b-50">
                 <h3 class="t1-b-1 cl-3 txt-center m-b-11" style="font-family: {!! websiteInfo_hlp('font_family') !!};">
-                    المشاريع
+                    {{__('site/app.projects')}}
                 </h3>
 
                 <div class="size-a-2 bg-3"></div>
@@ -207,19 +196,19 @@
                 @foreach($projects as $project)
                     <div class="col-sm-10 col-md-8 col-lg-4 p-b-40">
                         <!-- Block2 -->
-                        <div class="block2 bg-img2"
+                        <a href="{{route('project.details',$project->id)}}">
+                            <div class="block2 bg-img2"
                              style="background-image: url( {{asset($project->image)}});">
                             <div class="block2-content trans-04">
-                                <h4 class="block2-title t1-m-1 cl-0 flex-s-c trans-04"
-                                    style="font-family: {!! websiteInfo_hlp('font_family') !!};">
-                                    {{$project->title}}
-                                </h4>
-
-                                <p class="t1-s-2 cl-13 p-b-26" style="font-family: {!! websiteInfo_hlp('font_family') !!};">
-                                    {{$project->notes}}
-                                </p>
+                                <a href="{{route('project.details',$project->id)}}">
+                                    <h4 class="block2-title t1-m-1 cl-0 flex-s-c trans-04"
+                                        style="font-family: {!! websiteInfo_hlp('font_family') !!};">
+                                        {{$project->title}}
+                                    </h4>
+                                </a>
                             </div>
                         </div>
+                        </a>
                     </div>
                 @endforeach
 
@@ -288,7 +277,7 @@
                 @foreach($news as $new)
                     <div class="col-sm-10 col-md-8 col-lg-4 p-b-40">
                         <div class="bg-0 h-full">
-                            <a href="{{asset($new->image)}}" class="hov-img0 of-hidden">
+                            <a href="{{ route('news.details',$new->id) }}" class="hov-img0 of-hidden">
                                 <img src="{{asset($new->image)}}" alt="IMG">
                             </a>
 
@@ -310,10 +299,6 @@
                                     </div>
 
                                 </div>
-
-                                <p class="t1-s-2 cl-6 p-b-20" style="font-family: {!! websiteInfo_hlp('font_family') !!};">
-                                    {{$new->notes}}
-                                </p>
 
                             </div>
                         </div>

@@ -8,11 +8,11 @@
 	<section class="bg-img1 kit-overlay1 {{ showSection_hlp('about_us') }}" style="background-image: url({{ asset('storage/front/'.websiteInfo_hlp('about_image')) }});">
 		<div class="container size-h-3 p-tb-30 flex-col-c-c">
 			<h2 class="t1-b-1 text-uppercase cl-0 txt-center m-b-25">
-				About Us
+				{{__('site/app.about_us')}}
 			</h2>
 
 			<div class="flex-wr-c-c">
-				<a href="index.html" class="breadcrumb-item">
+				<a href="{{route('home')}}" class="breadcrumb-item">
 					Home
 				</a>
 
@@ -38,7 +38,7 @@
 					</div>
 
 					<div class="p-r-20 p-r-0-sr767">
-						{{websiteInfo_hlp('about_us')}}
+						{!!websiteInfo_hlp('about_us_'.App::getLocale()) !!}
 					</div>
 				</div>
 
