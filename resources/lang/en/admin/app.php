@@ -98,4 +98,7 @@ return [
     'order_view'=>'View Order',
     'font_family'=>'Font Family',
     'font_url'=>'Font URL',
+    'whats_up'=>'ًWhats Up Number',
+    'show_logo'=>'ًShow Logo',
+
 ];

@@ -23,6 +23,7 @@ return [
   'phone' => 'هاتف',
   'address' => 'عنوان',
   'fb_link' => 'رابط الفيسبوك',
+  'whats_up' => 'رقم الواتس أب',
   'twitter_link' => 'رابط تويتر',
   'linked_link' => 'رابط لينكد إن',
   'instagram_link' => 'رابط Instagram',
@@ -101,4 +102,5 @@ return [
     'order_view'=>'ترتيب العرض',
     'font_family'=>'توع الخط',
     'font_url'=>'رابط الخط من جوجل للخطوط',
+    'show_logo'=>'ًاظهار اللوجو',
 ];

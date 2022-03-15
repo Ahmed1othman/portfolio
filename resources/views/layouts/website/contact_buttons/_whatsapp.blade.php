@@ -25,7 +25,7 @@
         color:#5cd08d;
     }
 </style>
-<a href="https://api.whatsapp.com/send?phone={{ websiteInfo_hlp('phone') }}" class="float" target="_blank">
+<a href="https://api.whatsapp.com/send?phone={{ websiteInfo_hlp('whats_up') }}" class="float" target="_blank">
     <i class="fa fa-whatsapp my-float"></i>
 </a>
 <!-- End whatsapp -->
