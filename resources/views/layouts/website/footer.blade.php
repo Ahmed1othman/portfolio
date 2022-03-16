@@ -5,7 +5,7 @@
                 <div class="col-sm-8 col-md-4 col-lg-3 p-b-20">
 
                    <div class="size-h-1 flex-s-e p-b-6 m-b-18">
-                       <a href="#">
+                       <a href="{{route('home')}}">
                            <img class="max-s-full" src="{{ asset('storage/front/' . websiteInfo_hlp('logo_'.App::getLocale())) }}" alt="{{ websiteInfo_hlp('website_name_'.App::getLocale()) }}">
                        </a>
                    </div>
@@ -100,7 +100,11 @@
     <div class="bg-10">
         <div class="container txt-center p-tb-15">
             <span class="t1-s-2 cl-14">
-                Copyright @ {{ date('Y') }} Developed by Ahmed Othman. All rights reserved.
+                @if(App::getLocale()=='en')
+                Copyright @ {{ date('Y') }} For <span class="h5"><a class="text-danger" href="{{route('home')}}">{{websiteInfo_hlp('website_name_en')}}</a> </span>. All rights reserved.
+                @else
+                    جميع الحقوق محفوظة لـ <span class="h5"><a class="text-danger" href="{{route('home')}}">{{websiteInfo_hlp('website_name_ar')}}</a> </span> @ {{date('Y')}}
+                @endif
             </span>
         </div>
     </div>

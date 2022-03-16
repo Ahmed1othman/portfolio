@@ -77,6 +77,7 @@ Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => ['lo
 
     Route::post('/site-projects',[HomeController::class , 'subscription' ])->name('subscription');
     Route::post('/contactus',[HomeController::class , 'contactus' ])->name('contactusstore');
+    Route::get('/pdf',[HomeController::class , 'downloadPdf' ])->name('downloadPdf');
 });
 
 

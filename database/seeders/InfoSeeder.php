@@ -23,6 +23,7 @@ class InfoSeeder extends Seeder
         Info::create(['option' => 'logo_en','value' => 'logo.png','type' => 'image']);
         Info::create(['option' => 'logo_ar','value' => 'logo.png','type' => 'image']);
         Info::create(['option' => 'show_logo','value' => true,'type' => 'checkbox']);
+        Info::create(['option' => 'portfolio_pdf','value' => 'portfolio.pdf','type' => 'pdf']);
         Info::create(['option' => 'about_image','value' => 'about.png','type' => 'image']);
         Info::create(['option' => 'services_image','value' => 'service.png','type' => 'image']);
         Info::create(['option' => 'projects_image','value' => 'projects.png','type' => 'image']);

@@ -18,8 +18,8 @@ return [
     'send_email' => 'ارسل بريد الكتروني',
     'contact_us' => 'اتصل بنا',
     'view_project' => 'عرض مشروع',
-    'projects' => 'المشاريع',
-    'Projects' => 'المشاريع',
+    'projects' => 'المشاريع والاعتمادات',
+    'Projects' => 'المشاريع والاعتمادات',
     'project_details' => 'تفاصيل المشروع',
     'view_service' => 'مشاهدة الخدمة',
     'services' => 'خدمات',
@@ -39,7 +39,7 @@ return [
     'Phone Number' => 'رقم الهاتف',
 
     'Subscribe' => 'اشترك الان',
-
+    'download_our_cv' => 'تحميل سيرتنا الذاتية',
     'sign_up'=>'اشترك معنا',
     'why_choose_us' => 'لماذا تختارنا؟',
     'Leave_your_information' => 'اترك بياناتك والبريد الالكتروني لك. وسوف نتواصل معك في اسرع وقت.',

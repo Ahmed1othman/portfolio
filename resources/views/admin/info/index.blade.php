@@ -35,8 +35,7 @@
                         </div>
                         <div class="col-xl-6">
                             <div class="form-group">
-
-                                <input type="file" class="form-control" name="value">
+                                <input type="file" class="form-control" name="value" accept="image/*">
                             </div>
                         </div>
                         @elseif ($row->type=='string')
@@ -47,10 +46,10 @@
                                     value="{{ old('value', $row->value  ) }}">
                             </div>
                         </div>
-                        @elseif ($row->type=='check_box')
+                        @elseif ($row->type=='pdf')
                         <div class="col-xl-8">
                             <div class="form-group">
-
+                                <input type="file" class="form-control" name="value" accept="application/pdf">
                             </div>
                         </div>
 
@@ -68,6 +67,8 @@
                                     <label class="form-check-label" for="flexSwitchCheckChecked">{{__('admin/app.show_logo')}}</label>
                                 </div>
                             </div>
+
+
 
                         @elseif ($row->type=='text')
                         <div class="col-xl-8">

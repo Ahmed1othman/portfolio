@@ -37,6 +37,7 @@ return [
     'Request A Call Back' => 'Request A Call Back',
     'Contact Us'=>'Contact Us',
 
+    'download_our_cv' => 'Download Our CV',
     'Email' => 'Email',
     'Your Name' => 'Your Name',
     'Submit' => 'Submit',
