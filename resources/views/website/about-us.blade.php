@@ -1,6 +1,6 @@
 @extends('layouts.website.master')
 @section('title')
-    {{ __('admin/app.about_us') }}
+    {{ __('site/app.about_us') }}
 @endsection
 @section('content')
 
@@ -46,7 +46,8 @@
             @if(websiteInfo_hlp('portfolio_pdf'))
             <hr>
             <div class="text-center">
-                    <a href="{{route('downloadPdf')}}" class="btn btn-primary btn-lg" style="color: white; width: 40%">{{__('site/app.download_our_cv')}}</a>
+{{--                    <a href="{{route('downloadPdf')}}" class="btn btn-primary btn-lg" style="color: white; width: 40%">{{__('site/app.download_our_cv')}} <i class="fa fa-download"></i></a>--}}
+                    <a href="{{asset('storage/front/'.websiteInfo_hlp('portfolio_pdf'))}}" target="_blank" class="btn btn-primary btn-lg" style="color: white; width: 40%">{{__('site/app.download_our_cv')}} <i class="fa fa-download"></i></a>
             </div>
             @endif
 		</div>

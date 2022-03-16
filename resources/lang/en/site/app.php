@@ -36,8 +36,9 @@ return [
     'Leave_your_information' => 'Leave your information and email address. We will call back and advise you.',
     'Request A Call Back' => 'Request A Call Back',
     'Contact Us'=>'Contact Us',
+    'about_us'=>'About Us',
 
-    'download_our_cv' => 'Download Our CV',
+    'download_our_cv' => 'View Our Profile',
     'Email' => 'Email',
     'Your Name' => 'Your Name',
     'Submit' => 'Submit',

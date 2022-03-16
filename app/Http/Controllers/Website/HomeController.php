@@ -182,14 +182,15 @@ class HomeController extends Controller
 
 
     public function downloadPdf(){
-        try {
+//        try {
             $pdf = websiteInfo_hlp('portfolio_pdf');
             if ($pdf){
-                return Storage::disk('public')->download('front/'.$pdf,websiteInfo_hlp('website_name_en')."_cv");
+                //return Storage::disk('public')->download('front/'.$pdf,websiteInfo_hlp('website_name_en')."_cv",[],'inline');
+                return response()->file(storage_path().'/public/front/'.$pdf);
             }
-            }catch (\Exception $e){
-
-            }
+//            }catch (\Exception $e){
+//
+//            }
 
     }
 }

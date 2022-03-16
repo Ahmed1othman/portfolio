@@ -31,15 +31,16 @@ return [
     'news_details' => 'تفاصيل الخبر',
     'About Us' => 'من نحن',
     'Contact Us' => 'تواصل معانا',
-
     'pages' => 'الصفحات',
     'Email' => 'البريد الالكتروني',
     'Your Name' => 'اسمك',
     'Submit' => 'ارسال',
+    'About_Us' => 'من نحن',
+    'about_us' => 'من نحن',
     'Phone Number' => 'رقم الهاتف',
 
     'Subscribe' => 'اشترك الان',
-    'download_our_cv' => 'تحميل سيرتنا الذاتية',
+    'download_our_cv' => 'عرض البروفايل الخاص بنا',
     'sign_up'=>'اشترك معنا',
     'why_choose_us' => 'لماذا تختارنا؟',
     'Leave_your_information' => 'اترك بياناتك والبريد الالكتروني لك. وسوف نتواصل معك في اسرع وقت.',
