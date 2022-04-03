@@ -1,8 +1,6 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
-<link href="{{asset('admin/assets/plugins/Drag-And-Drop/dist/imageuploadify.min.css')}}" rel="stylesheet" />
-
 <link href="{{asset('admin/assets/plugins/datatable/css/dataTables.bootstrap5.min.css')}}" rel="stylesheet" />
 <link href="{{ asset('admin/assets/plugins/notifications/css/lobibox.min.css') }}" rel="stylesheet"/>
 @if (app()->getLocale()=='ar')<link href="{{ asset('admin/assets/plugins/notifications/css/lobibox.min.css') }}" rel="stylesheet"/>
@@ -47,7 +45,6 @@
 @endif
 <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tagsinput/0.8.0/bootstrap-tagsinput.css"
       rel="stylesheet" />
-
 <style>
     .bootstrap-tagsinput .tag {
         margin-right: 2px;

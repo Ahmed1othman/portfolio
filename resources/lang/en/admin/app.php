@@ -100,5 +100,12 @@ return [
     'font_url'=>'Font URL',
     'whats_up'=>'ًWhats Up Number',
     'show_logo'=>'ًShow Logo',
+    'total_services'=>'Total services',
+    'total_projects'=>'Total projects',
+    'total_visitors'=>'Total visitors',
+    'total_features'=>'Total features',
+    'total_news'=>'Total news',
+    'total_orders'=>'Total orders',
+
 
 ];

@@ -22,6 +22,7 @@ function submitSubscription() {
                     round_error_noti(obj.msg)
                 } else {
                     round_success_noti(obj.msg)
+                    email.value = ''
                 }
             },
             error: function(error) {
@@ -43,7 +44,7 @@ function request_call() {
     var call_name = document.getElementById("call_name");
     var call_phone = document.getElementById("call_phone");
     const re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    if (re.test(call_email.value)) {
+
         if (call_name.value === '') {
             round_error_noti('You Nead To Enter Name')
             return;
@@ -71,6 +72,9 @@ function request_call() {
                     round_error_noti(obj.msg)
                 } else {
                     round_success_noti(obj.msg)
+                        call_email.value = ''
+                        call_name.value = ''
+                        call_phone.value = ''
                 }
             },
             error: function(error) {
@@ -78,13 +82,6 @@ function request_call() {
 
             }
         });
-
-    } else {
-        round_error_noti('You Nead To Enter Correct Email')
-
-    }
-
-
 }
 
 function submitContactUs() {
@@ -94,16 +91,12 @@ function submitContactUs() {
     var contact_msg = document.getElementById("contact_msg");
 
     const re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    if (re.test(contact_email.value)) {
+
         if (contact_name.value === '') {
             round_error_noti('You Nead To Enter Name')
             return;
         }
         if (contact_phone.value === '') {
-            round_error_noti('You Nead To Enter Phone')
-            return;
-        }
-        if (contact_msg.value === '') {
             round_error_noti('You Nead To Enter Phone')
             return;
         }
@@ -127,6 +120,10 @@ function submitContactUs() {
                     round_error_noti(obj.msg)
                 } else {
                     round_success_noti(obj.msg)
+                    contact_email.value = ''
+                        contact_name.value = ''
+                        contact_phone.value = ''
+                        contact_msg.value
                 }
             },
             error: function(error) {
@@ -134,11 +131,5 @@ function submitContactUs() {
 
             }
         });
-
-    } else {
-        round_error_noti('You Nead To Enter Correct Email')
-
-    }
-
 
 }

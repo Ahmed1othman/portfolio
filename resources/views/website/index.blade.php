@@ -155,7 +155,7 @@
 
                         <div class="col-sm-6 p-b-25">
                             <div class="size-a-3">
-                                <input class="s-full bg-0 t1-m-2 cl-6 plh-6 p-rl-20" type="text" name="phone"
+                                <input class="s-full bg-0 t1-m-2 cl-6 plh-6 p-rl-20" type="number" name="phone"
                                        placeholder="{{__('site/app.Phone Number')}}" id="call_phone" required>
                             </div>
                         </div>
@@ -163,7 +163,7 @@
                         <div class="col-sm-6 p-b-25">
                             <div class="size-a-3">
                                 <input class="s-full bg-0 t1-m-2 cl-6 plh-6 p-rl-20" type="email" id="call_email" name="email"
-                                       placeholder="{{__('site/app.Email')}}" required>
+                                       placeholder="{{__('site/app.Email')}}">
                             </div>
                         </div>
 
@@ -540,7 +540,7 @@
 
                 <form class="flex-wr-c-c">
                     <input class="size-a-5 bo-all-1 bcl-11 t1-m-2 cl-6 plh-6 p-rl-20 w-full-sr575 m-tb-10" type="email"
-                           name="email" id="subemail" placeholder="email@example.com">
+                           name="email" id="subemail" placeholder="email@example.com" required>
 
                     <button onclick="submitSubscription()" type="button" class="size-a-6 flex-c-c bg-11 t1-s-2 text-uppercase cl-0 hov-btn1 trans-02 m-tb-10">
                         {{__('site/app.Subscribe')}}

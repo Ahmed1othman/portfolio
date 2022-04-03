@@ -93,17 +93,10 @@
             return false;
         }
     });
-
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tagsinput/0.8.0/bootstrap-tagsinput.js"></script>
-<script src="{{asset('admin/assets/plugins/Drag-And-Drop/dist/imageuploadify.min.js')}}"></script>
-<script>
-    function uploadFile(){
-        $('.image-uploadify').imageuploadify();
-    }
-    uploadFile();
-</script>
 
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 <script src="{{asset('admin/assets/js/coloris.min.js')}}"></script>
 <!--app JS-->
 <style>
@@ -111,3 +104,4 @@
         width: 100% !important;
     }
 </style>
+@stack('js')

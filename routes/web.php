@@ -18,7 +18,7 @@ use App\Http\Controllers\effects;
 
 require __DIR__ . '/auth.php';
 
-Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => ['localeSessionRedirect', 'localizationRedirect', 'localeViewPath']], function () { //...
+Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => ['localeSessionRedirect', 'localizationRedirect', 'localeViewPath','countVisitor']], function () { //...
 
     ################## Start Route Get Home ###########################
     Route::get('/', [HomeController::class, 'index'])->name('home');

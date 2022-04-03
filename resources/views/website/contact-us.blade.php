@@ -42,7 +42,7 @@
 						</div>
 
 						<div class="m-b-15 validate-input" data-validate = "Phone is required">
-							<input class="size-a-3 t1-m-2 plh-6 cl-6 p-rl-20 bo-1-rad-4 bcl-12 focus-in1" type="text" id="contact_phone" name="phone" placeholder="{{ __('site/app.your_number') }}">
+							<input class="size-a-3 t1-m-2 plh-6 cl-6 p-rl-20 bo-1-rad-4 bcl-12 focus-in1" type="number" id="contact_phone" name="phone" placeholder="{{ __('site/app.your_number') }}">
 						</div>
 
 						<div class="m-b-30 validate-input" data-validate = "Message is required">
@@ -90,8 +90,7 @@
 								</span>
 
 								<span class="size-w-4">
-                                    {{ websiteInfo_hlp('phone') }}
-
+                                    {{ websiteInfo_hlp('phone')}}
 								</span>
 							</li>
 						</ul>

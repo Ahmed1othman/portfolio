@@ -6,8 +6,10 @@ use App\Http\Controllers\Controller;
 use App\Models\ContactUs;
 use App\Models\order;
 use App\Models\SliderOption;
+use App\Models\Visitor;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
-
+use Illuminate\Support\Facades\DB;
 
 
 class HomeController extends Controller
@@ -19,7 +21,17 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('admin.index');
+
+
+        $start = date('Y-m-d', strtotime(Carbon::now()->subDays(30)));
+        $end = date('Y-m-d');
+        $data['visitors'] = Visitor::whereBetween('created_at', [$start . " 00:00:00", $end . " 23:59:59"])->select(
+            DB::raw('count as views'),
+            DB::raw('DATE(created_at) as day'),
+        )
+            ->orderBy('day')
+        ->get();
+        return view('admin.index',$data);
     }
 
     public function AllOrders()
@@ -92,7 +104,7 @@ class HomeController extends Controller
             $data=['word'=>'x:left','image'=>'slidingoverlayhorizontal'];
 
             SliderOption::create($data);
-            
+
             return response()->json($data, 200);
         }
     }

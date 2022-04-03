@@ -103,4 +103,11 @@ return [
     'font_family'=>'توع الخط',
     'font_url'=>'رابط الخط من جوجل للخطوط',
     'show_logo'=>'ًاظهار اللوجو',
+
+    'total_services'=>'اجمالي عدد الخدمات',
+    'total_projects'=>'اجمالي عدد المشروعات',
+    'total_visitors'=>'اجمالي عدد الزوار',
+    'total_features'=>'اجمالي عدد المميزات',
+    'total_news'=>'اجمالي عدد الاخبار',
+    'total_orders'=>'اجمالي عدد الطلبات',
 ];
