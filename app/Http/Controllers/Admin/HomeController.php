@@ -21,16 +21,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-
-
-        $start = date('Y-m-d', strtotime(Carbon::now()->subDays(30)));
-        $end = date('Y-m-d');
-        $data['visitors'] = Visitor::whereBetween('created_at', [$start . " 00:00:00", $end . " 23:59:59"])->select(
-            DB::raw('count as views'),
-            DB::raw('DATE(created_at) as day'),
-        )
-            ->orderBy('day')
-        ->get();
+        $data['visitors'] = $this->visitors();
         return view('admin.index',$data);
     }
 
@@ -175,4 +166,17 @@ class HomeController extends Controller
     {
         //
     }
+
+    public function visitors(){
+        $start = date('Y-m-d', strtotime(Carbon::now()->subDays(30)));
+        $end = date('Y-m-d');
+        return Visitor::whereBetween('created_at', [$start . " 00:00:00", $end . " 23:59:59"])->select(
+            DB::raw('count as views'),
+            DB::raw('DATE(created_at) as day'),
+        )
+            ->orderBy('day')
+            ->get();
+    }
 }
+
+

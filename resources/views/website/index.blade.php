@@ -142,8 +142,7 @@
                     </p>
                 </div>
 
-                <form class="col-lg-8 p-b-30 p-t-8" action="{{route('orders')}}" method="post"
-                      style="font-family: {!! websiteInfo_hlp('font_family') !!};">
+                <form class="col-lg-8 p-b-30 p-t-8" action="" method="post" style="font-family: {!! websiteInfo_hlp('font_family') !!};">
                     @csrf
                     <div class="row">
                         <div class="col-sm-6 p-b-25">
@@ -162,8 +161,7 @@
 
                         <div class="col-sm-6 p-b-25">
                             <div class="size-a-3">
-                                <input class="s-full bg-0 t1-m-2 cl-6 plh-6 p-rl-20" type="email" id="call_email" name="email"
-                                       placeholder="{{__('site/app.Email')}}">
+                                <input class="s-full bg-0 t1-m-2 cl-6 plh-6 p-rl-20" type="email" id="call_email" name="email" placeholder="{{__('site/app.Email')}}">
                             </div>
                         </div>
 

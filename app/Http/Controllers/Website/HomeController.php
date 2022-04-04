@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Website;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\Website\OrderRequest;
 use App\Models\ContactUs;
 use App\Models\Custom;
 use App\Models\feature;
@@ -17,7 +18,9 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\File as FacadesFile;
+use Illuminate\Support\Facades\Response;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\Validator;
 
 class HomeController extends Controller
 {
@@ -90,8 +93,22 @@ class HomeController extends Controller
 
     public function Orders(Request $request)
     {
-
         try {
+            $rules = array(
+                'name' => 'required|string|min:2',
+                'email' => 'nullable|email',
+                'phone' => 'required|string|max:15',
+            );
+            $validator = Validator::make($request->all(), $rules);
+            if ($validator->fails())
+            {
+                return Response::json(array(
+                    'code' => 0,
+                    'msg' => $validator->getMessageBag()->toArray()
+
+                ), 400);
+            }
+
             $orders = new order();
             $orders->name = $request->name;
             $orders->email = $request->email;

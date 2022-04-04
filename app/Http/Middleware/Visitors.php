@@ -33,7 +33,6 @@ class Visitors
                 $visitorsCount->update([ 'count' => DB::raw('count + 1')]);
             }
         }
-
         return $next($request);
     }
 
