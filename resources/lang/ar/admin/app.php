@@ -103,6 +103,11 @@ return [
     'font_family'=>'توع الخط',
     'font_url'=>'رابط الخط من جوجل للخطوط',
     'show_logo'=>'ًاظهار اللوجو',
+    'notifications_email'=>'ايميل ارسال الاشعارات',
+
+    'portfolio_pdf'=>'البروفايل',
+    'created_at'=>'تاريخ الارسال',
+    'msg'=>'الرسالة',
 
     'total_services'=>'اجمالي عدد الخدمات',
     'total_projects'=>'اجمالي عدد المشروعات',

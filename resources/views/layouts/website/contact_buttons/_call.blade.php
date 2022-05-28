@@ -7,7 +7,7 @@
         height:60px;
         bottom:50px;
         left:50px;
-        background-color: #007BD3;
+        background-color: #fc0000;
         color:#FFF;
         border-radius:50px;
         text-align:center;
@@ -22,7 +22,7 @@
 
     .my-float1 i:hover{
         margin-top:16px;
-        color: #ee0d41;
+        color: #ecbcca;
     }
 </style>
 <a  href="tel:{{ websiteInfo_hlp('phone') }}" class="float1" target="_blank">

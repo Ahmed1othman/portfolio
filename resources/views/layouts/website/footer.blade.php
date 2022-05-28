@@ -75,23 +75,7 @@
                 </div>
 
                 <div class="col-sm-8 col-md-4 col-lg-3 p-b-20">
-                    <div class="size-h-1 flex-s-e m-b-18">
-                        <h4 class="t1-m-3 text-uppercase cl-0">
-                            {{ __('site/app.pages') }}
-                        </h4>
-                    </div>
-
-                    <div class="flex-wr-s-s">
-                        @foreach(customPages() as $customPage)
-                        <ul class="w-50">
-                            <li class="kit-list1 p-b-9">
-                                <a href="{{ route('customPage',$customPage->name) }}" class="t1-s-2 cl-13 hov-link2 trans-02">
-                                    {{ $customPage->title }}
-                                </a>
-                            </li>
-                        </ul>
-                        @endforeach
-                    </div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28371.6951314864!2d31.169437613584094!3d27.267401160456462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14450590e9390a91%3A0x57a481f5604fd9e!2z2KPYqNmG2YjYqNiMINmF2LHZg9iyINij2KjZhtmI2KjYjCDYo9iz2YrZiNi3IDIyNTE1NTc!5e0!3m2!1sar!2seg!4v1653137810242!5m2!1sar!2seg" width="450" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>

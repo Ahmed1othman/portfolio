@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Website;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Website\OrderRequest;
+use App\Mail\RequestNotify;
 use App\Models\ContactUs;
 use App\Models\Custom;
 use App\Models\feature;
@@ -20,6 +21,7 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\File as FacadesFile;
 use Illuminate\Support\Facades\Response;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Validator;
 
 class HomeController extends Controller
@@ -116,6 +118,7 @@ class HomeController extends Controller
             $data = $orders->save();
             if ($data) {
                 $response = ['code' => 1, 'msg' => __('admin/app.your_data_send_successfully')];
+                $this->sentNotificationMail($orders,'هذا تنبيه بوجود طلب معاودة اتصال جديد',route('contact-us.show',$orders->id),'طلب طلب معاودة اتصال جديد');
             } else {
                 $response = ['code' => 0, 'msg' => __('admin/app.some_thing_error')];
             }
@@ -140,6 +143,8 @@ class HomeController extends Controller
             $data = $orders->save();
             if ($data) {
                 $response = ['code' => 1, 'msg' => __('admin/app.your_data_send_successfully')];
+                $this->sentNotificationMail($orders,'هذا تنبيه بوجود جهة اتصال جديده تم اضافتها',route('contact-us.show',$orders->id),'جهة اتصال جديده');
+
             } else {
                 $response = ['code' => 0, 'msg' => __('admin/app.some_thing_error')];
             }
@@ -196,6 +201,17 @@ class HomeController extends Controller
         return view('website.profile');
     }
 
+    public function sentNotificationMail($data,$message,$url,$subject){
+        if(websiteInfo_hlp('notifications_email')){
+            $email_details = [];
+            $email_details['message'] = $message;
+            $email_details['data'] = $data;
+            $email_details['url'] = $url;
+            $email_details['subject'] = $subject;
+            Mail::to(websiteInfo_hlp('notifications_email'))->send(new RequestNotify($email_details));
+            return 'done';
+        }
+    }
 
 
     public function downloadPdf(){

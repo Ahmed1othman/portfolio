@@ -28,6 +28,7 @@ class Visitors
                 Visitor::create([
                     'count' => 1,
                 ]);
+                Session::put($ip, $ip);
             }else{
                 Session::put($ip, $ip);
                 $visitorsCount->update([ 'count' => DB::raw('count + 1')]);

@@ -177,6 +177,18 @@ class HomeController extends Controller
             ->orderBy('day')
             ->get();
     }
+
+    public function showOrder($id)
+    {
+        $order = order::findOrFail($id);
+        return view('admin.orders.show-details', compact('order'));
+    }
+
+    public function showContact($id)
+    {
+        $contact = ContactUs::findOrFail($id);
+        return view('admin.contacts.show-details', compact('contact'));
+    }
 }
 
 

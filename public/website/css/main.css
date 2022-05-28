@@ -314,7 +314,6 @@ Input, textarea : 16px/1.5 'Roboto-Ragular', Arial, sans-serif;
 
 .logo {
     position: relative;
-    height: 65%;
     -webkit-flex-grow: 1;
     -moz-flex-grow: 1;
     flex-grow: 1;

@@ -100,6 +100,11 @@ return [
     'font_url'=>'Font URL',
     'whats_up'=>'ًWhats Up Number',
     'show_logo'=>'ًShow Logo',
+    'notifications_email'=>'Notifications Email',
+    'portfolio_pdf'=>'Profile',
+    'created_at'=>'Send Date',
+    'msg'=>'Message',
+
     'total_services'=>'Total services',
     'total_projects'=>'Total projects',
     'total_visitors'=>'Total visitors',

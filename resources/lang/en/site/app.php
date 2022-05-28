@@ -43,4 +43,6 @@ return [
     'Your Name' => 'Your Name',
     'Submit' => 'Submit',
     'Phone Number' => 'Phone Number',
+    'notifications_email'=>'Notifications Email',
+    'portfolio_pdf'=>'',
 ];

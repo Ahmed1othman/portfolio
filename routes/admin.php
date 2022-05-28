@@ -37,7 +37,9 @@ Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => ['au
     Route::get('/update-slider-option', [HomeController::class, 'updatesliderOption'])->name('update-slider-option');
     Route::post('/save-slider-option', [HomeController::class, 'savesliderOption'])->name('save-slider-option');
     Route::get('/contacts', [HomeController::class, 'contacts'])->name('contacts');
+    Route::get('/contacts/{id}', [HomeController::class, 'showContact'])->name('contact-us.show');
     Route::get('/all-orders', [HomeController::class, 'AllOrders'])->name('AllOrders');
+    Route::get('/orders/{id}', [HomeController::class, 'showOrder'])->name('orders.show');
     Route::post('/deleted-orders', [HomeController::class, 'deletedOrders'])->name('deletedOrders');
     Route::post('/deleted-contacts', [HomeController::class, 'deleteddata'])->name('deleteddata');
     ###################### End Routes orders  ######################

@@ -4,7 +4,21 @@
      .one h1 {
          text-align: center;
          text-transform: uppercase;
-         font-size: 25px;
+         font-size: 26px;
+         font-weight: bold;
+         color: {{ websiteInfo_hlp('main_color')}};
+         font-family: Sans-Seri;
+         width: 90%;
+         display: inline-block;
+         vertical-align: middle;
+     }
+
+     .fix-menu-desktop .wrap-menu-desktop{
+         height: 100px;
+     }
+
+     .menu-desktop .main-menu>li {
+         white-space: nowrap;
      }
 
  </style>
@@ -132,8 +146,6 @@
              <div class="logo-mobile">
                  <a href="{{route('home')}}"><img src="{{ asset('storage/front/' . websiteInfo_hlp('logo_'.App::getLocale())) }}" alt="LOGO" style="{{App::getLocale()=='ar'? 'right:0;left:100%':''}}"></a>
              </div>
-
-
              <!-- Button show menu -->
              <div class="btn-show-menu-mobile hamburger hamburger--squeeze">
                  <span class="hamburger-box">

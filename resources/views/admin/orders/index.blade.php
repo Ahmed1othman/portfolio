@@ -31,6 +31,7 @@
                                             @csrf
                                             <input type="hidden" name="id" value="{{$row->id}}">
                                             <button class="btn btn-danger btn-sm waves-effect waves-light"><i class="bx bx-trash"></i></button>
+                                            <a href="{{route('orders.show',$row->id)}}" class="btn btn-success btn-sm waves-effect waves-light"><i class="bx bx-show"></i></a>
                                         </form>
                                     </td>
                             @endforeach

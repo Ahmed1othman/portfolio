@@ -2,7 +2,7 @@
     <x-auth-card>
         <x-slot name="logo">
             <a href="/">
-                <x-application-logo class="w-20 h-20 fill-current text-gray-500" />
+                <img class="w-20 h-20 fill-current text-gray-500" src="{{ asset('storage/front/' . websiteInfo_hlp('logo_'.App::getLocale())) }}" alt="{{ websiteInfo_hlp('website_name_'.App::getLocale()) }}">
             </a>
         </x-slot>
 

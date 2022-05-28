@@ -32,6 +32,7 @@ class InfoSeeder extends Seeder
         Info::create(['option' => 'footer_image','value' => 'footer.png','type' => 'image']);
         Info::create(['option' => 'contact_image','value' => 'contact.png','type' => 'image']);
         Info::create(['option' => 'email','value' => '','type' => 'string']);
+        Info::create(['option' => 'notifications_email','value' => 'othmanahmed865@gmail.com','type' => 'string']);
         Info::create(['option' => 'phone','value' => '','type' => 'string']);
         Info::create(['option' => 'whats_up','value' => '','type' => 'string']);
         Info::create(['option' => 'address_en','value' => '','type' => 'string']);

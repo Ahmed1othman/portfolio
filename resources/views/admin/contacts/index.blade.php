@@ -35,6 +35,8 @@
                                         <button class="btn btn-danger btn-sm waves-effect waves-light"><i
                                                 class="bx bx-trash"></i></button>
                                     </form>
+                                    <a href="{{route('contact-us.show',$row->id)}}" class="btn btn-success btn-sm waves-effect waves-light"><i class="bx bx-show"></i></a>
+
                                 </td>
                                 @endforeach
                         </tbody>
