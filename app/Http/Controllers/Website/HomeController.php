@@ -134,7 +134,7 @@ class HomeController extends Controller
     public function contactus(Request $request)
     {
 
-        try {
+
             $orders = new ContactUs();
             $orders->name = $request->name;
             $orders->email = $request->email;
@@ -149,11 +149,11 @@ class HomeController extends Controller
                 $response = ['code' => 0, 'msg' => __('admin/app.some_thing_error')];
             }
             return json_encode($response);
-        } catch (\Exception $e) {
-            DB::rollback();
-            $response = ['code' => 0, 'msg' => __('admin/app.some_thing_error')];
-            return json_encode($response);
-        }
+//        } catch (\Exception $e) {
+//            DB::rollback();
+//            $response = ['code' => 0, 'msg' => __('admin/app.some_thing_error')];
+//            return json_encode($response);
+//        }
 
     }
 
@@ -163,10 +163,7 @@ class HomeController extends Controller
     public function subscription(Request $request)
     {
         try {
-
-
             $data['email'] = $request->email;
-
             $data = Subscription::create($data);
             if ($data) {
                 $response = ['code' => 1, 'msg' => __('admin/app.your_email_send_successfully')];
