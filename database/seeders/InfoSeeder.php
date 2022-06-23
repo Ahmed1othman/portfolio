@@ -18,8 +18,8 @@ class InfoSeeder extends Seeder
     {
         DB::table('infos')->delete();
         DB::table('slider_options')->delete();
-        Info::create(['option' => 'website_name_en','value' => 'Ahmed Othman','type' => 'string']);
-        Info::create(['option' => 'website_name_ar','value' => 'أحمد عثمان','type' => 'string']);
+        Info::create(['option' => 'website_name_en','value' => 'Sihad General','type' => 'string']);
+        Info::create(['option' => 'website_name_ar','value' => 'صيهد الوسطي','type' => 'string']);
         Info::create(['option' => 'logo_en','value' => 'logo.png','type' => 'image']);
         Info::create(['option' => 'logo_ar','value' => 'logo.png','type' => 'image']);
         Info::create(['option' => 'show_logo','value' => true,'type' => 'checkbox']);
@@ -44,7 +44,7 @@ class InfoSeeder extends Seeder
         Info::create(['option' => 'snapchat_link','value' => '','type' => 'string']);
         Info::create(['option' => 'youtube_link','value' => '','type' => 'string']);
         Info::create(['option' => 'about_us_en','value' => 'About US bla bla bla bla bla bla bla bla ...','type' => 'text']);
-        Info::create(['option' => 'about_us_ar','value' => 'بلااااابلااااابلااااامن نحن بلااااا ','type' => 'text']);
+        Info::create(['option' => 'about_us_ar','value' => 'شركة الصيهد الوسطي للمقاولات العامة','type' => 'text']);
         Info::create(['option' => 'main_color','value' => '#05233a','type' => 'color']);
         Info::create(['option' => 'secondary_color','value' => '#16a086','type' => 'color']);
         Info::create(['option' => 'main_font_color','value' => '#05233a','type' => 'color']);
