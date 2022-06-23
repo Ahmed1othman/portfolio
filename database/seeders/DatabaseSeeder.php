@@ -23,7 +23,7 @@ class DatabaseSeeder extends Seeder
        DB::table('users')->delete();
        User::create([
            'name' => 'Sihad Admin'
-           ,'email' => 'admin@sihad.com'
+           ,'email' => 'admin@sihadgeneral.com'
            ,'password' => Hash::make('$i7@d_2022')
        ]);
     }
