@@ -1,6 +1,7 @@
 @extends('layouts.admin.master')
 @section('title')
-    {{trans('admin/contacts.details')}}
+    {{trans('admin/app.contact_us_details')}}
+
 @endsection
 @section('content')
     <div class="page-wrapper">

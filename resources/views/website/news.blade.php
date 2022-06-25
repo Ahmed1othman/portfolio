@@ -1,6 +1,6 @@
 @extends('layouts.website.master')
 @section('title')
-    news
+    {{__('site/app.news')}}
 @endsection
 
 @section('content')

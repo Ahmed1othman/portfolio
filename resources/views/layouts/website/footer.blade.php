@@ -34,7 +34,7 @@
                     </div>
                 </div>
 
-                <div class="col-sm-8 col-md-4 col-lg-3 p-b-20">
+                <div class="col-sm-8 col-md-4 p-b-20">
                     <div class="size-h-1 flex-s-e m-b-18">
                         <h4 class="t1-m-3 text-uppercase cl-0">
                             {{__('site/app.contact_us')}}

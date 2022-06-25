@@ -1,6 +1,6 @@
 @extends('layouts.admin.master')
 @section('title')
-تواصل معنا
+    {{trans('admin/app.contact_us')}}
 @endsection
 @section('content')
 <div class="page-wrapper">

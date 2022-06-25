@@ -1,6 +1,6 @@
 @extends('layouts.website.master')
 @section('title')
-    services
+    {{__('site/app.services')}}
 @endsection
 @section('content')
 <section class="bg-img1 kit-overlay1" style="background-image: url({{ asset('storage/front/'.websiteInfo_hlp('services_image')) }});">

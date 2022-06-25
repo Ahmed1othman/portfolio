@@ -62,7 +62,7 @@ return [
   'archive' => 'Archive',
   'footer_image' => 'Footer Image',
   'custom_page' => 'Custom Page',
-  'slider-option' => 'slider-option',
+  'slider-option' => 'Slider Option',
   'word' => 'word',
   'name' => 'Name',
   'name_en' => 'Name By English',
@@ -111,6 +111,18 @@ return [
     'total_features'=>'Total features',
     'total_news'=>'Total news',
     'total_orders'=>'Total orders',
+    'slider-option' => 'Slider Option',
+    'create_slider' => 'Create Slider',
+    'create_slider' => 'Create Slider',
+    'contact_us' => 'Contact Us',
+    'contact_us_details' => 'Contact Us Details',
+    'subscriptions' => 'Subscriptions',
+    'dashboard' => 'Control Panel',
+
+    'total_contacts' => 'Total Contacts',
+    'total_subscriptions' => 'Total Subscriptions',
+
+
 
 
 ];

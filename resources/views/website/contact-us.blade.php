@@ -1,6 +1,6 @@
 @extends('layouts.website.master')
 @section('title')
-    contact Us
+    {{__('site/app.contact_us')}}
 @endsection
 @section('content')
 

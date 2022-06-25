@@ -57,6 +57,10 @@
         width: 100%;
         padding: 0.450rem 0.80rem;
     }
+
+    .tp-bgimg{
+        filter: blur(2px) brightness(0.8);
+    }
 </style>
 <link rel="stylesheet" type="text/css" href="{{asset('admin/assets/css/coloris.min.css')}}">
 
@@ -69,6 +73,5 @@
         } );
         CKEDITOR.add
     }
-
     ckeditor()
 </script>

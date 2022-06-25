@@ -1,6 +1,6 @@
 @extends('layouts.website.master')
 @section('title')
-   projects details
+   {{__('site/app.projects_details')}}
 @endsection
 @section('content')
 <section class="bg-img1 kit-overlay1" style="background-image: url({{ asset('storage/front/'.websiteInfo_hlp('projects_image')) }});">

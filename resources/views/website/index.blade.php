@@ -4,7 +4,6 @@
 @endsection
 @section('content')
     <!-- Slide -->
-
     <section class="slider {{ showSection_hlp('slider') }}"style="font-family: {!! websiteInfo_hlp('font_family') !!};">
         <div class="rev_slider_wrapper fullwidthbanner-container">
             <div id="rev_slider_1" class="rev_slider fullwidthabanner" data-version="5.4.5" style="display:none">
@@ -13,8 +12,9 @@
                     @foreach ($sliders as $slider)
 
                         <li data-transition="{{ $slideroption->image }}">
-                            <img src="{{ asset($slider->image)}}" alt="IMG-SLIDE" class="rev-slidebg">
-                            <h2 class="tp-caption tp-resizeme caption-1 text-uppercase"
+                            <img src="{{ asset($slider->image)}}" alt="IMG-SLIDE" class="rev-slidebg" style="">
+                            <h2 class="tp-caption tp-resizeme caption-1 text-uppercase" style="text-shadow: 4px 2px #000022;
+                                font-weight: 900;font-family: {{ websiteInfo_hlp('font_family') }};"
                                 data-frames='[{"delay":500,"speed":1500,"frame":"0","from":"{{ $slideroption->word }};","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
                                 data-visibility="['on', 'on', 'on', 'on']" data-fontsize="['48', '48', '48', '38']"
                                 data-lineheight="['58', '58', '58', '58']" data-color="['#FFF']"
@@ -36,8 +36,8 @@
                                data-height="['auto', 'auto', 'auto', 'auto']" data-whitespace="['normal']"
                                data-paddingtop="[0, 0, 0, 0]" data-paddingright="[15, 15, 15, 15]"
                                data-paddingbottom="[0, 0, 0, 0]" data-paddingleft="[15, 15, 15, 15]"
-                               data-basealign="slide" data-responsive_offset="off">
-                                {!! $slider->text !!}
+                               data-basealign="slide" data-responsive_offset="off" style="text-shadow: rgb(0 0 0) 4px 2px; font-family: {!! websiteInfo_hlp('font_family') !!};">
+                                {{$slider->text}}
 
                             </span>
                         </li>

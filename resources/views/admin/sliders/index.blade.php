@@ -1,4 +1,7 @@
 @extends('layouts.admin.master')
+@section('title')
+    @lang('admin/app.slider')
+@endsection
 @section('content')
 <div class="page-wrapper">
     <div class="page-content">

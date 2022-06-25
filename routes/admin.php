@@ -44,7 +44,7 @@ Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => ['au
     Route::post('/deleted-contacts', [HomeController::class, 'deleteddata'])->name('deleteddata');
     ###################### End Routes orders  ######################
 
-    Route::resource('custom-page', CustomController::class);
+//    Route::resource('custom-page', CustomController::class);
 
     ###################### Start Routes resource Services ######################
     Route::resource('Services', ServiceController::class);

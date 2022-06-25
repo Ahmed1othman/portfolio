@@ -1,4 +1,7 @@
 @extends('layouts.admin.master')
+@section('title')
+    {{__('admin/app.navbar')}}
+@endsection
 @section('content')
 <div class="page-wrapper">
     <div class="page-content">

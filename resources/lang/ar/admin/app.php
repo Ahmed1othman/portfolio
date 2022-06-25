@@ -115,4 +115,14 @@ return [
     'total_features'=>'اجمالي عدد المميزات',
     'total_news'=>'اجمالي عدد الاخبار',
     'total_orders'=>'اجمالي عدد الطلبات',
+    'services'=>'الخدمات',
+    'news'=>'الاخبار',
+
+    'contact_us_details' => 'تفاصيل جهة الاتصال',
+    'subscriptions' => 'الاشتراكات',
+    'dashboard' => 'لوحة التحكم',
+    'total_contacts' => 'اجمالي جهات الاتصال',
+    'total_subscriptions' => 'اجمالي الاشتراكات',
+
+
 ];

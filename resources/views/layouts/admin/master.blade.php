@@ -9,7 +9,8 @@
 
     <meta name="csrf-token" content="{{ csrf_token() }}" />
     @yield('meta')
-    <title>@yield('title')</title>
+
+    <title>@yield('title') - {{__('admin/app.dashboard')}}</title>
     @include('layouts.admin.header')
 </head>
 

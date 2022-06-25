@@ -1,6 +1,6 @@
 @extends('layouts.admin.master')
 @section('title')
-    {{trans('admin/orders.orders')}}
+    {{__('admin/orders.orders')}}
 @endsection
 @section('content')
     <div class="page-wrapper">

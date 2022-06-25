@@ -37,14 +37,14 @@
 
                                     <div class="col-12">
                                         <label for="text" class="form-label">{{ __('admin/sliders.text') }}</label>
-                                        <textarea class="form-control ckeditor @error('text') is-invalid @enderror" value="" name="text"  id="text" placeholder="{{ __('admin/app.text_ar') }}">{{ $row->getTranslation('text', 'en') }}</textarea>
+                                        <textarea class="form-control @error('text') is-invalid @enderror" value="" name="text"  id="text" placeholder="{{ __('admin/app.text_ar') }}">{{ $row->getTranslation('text', 'en') }}</textarea>
                                         @error('text')
                                         <div class="alert alert-danger">{{$message}}</div>
                                         @enderror
                                     </div>
 									<div class="col-12">
 										<label for="text_ar" class="form-label">{{ __('admin/sliders.text_ar') }}</label>
-										<textarea class="form-control ckeditor @error('text_ar') is-invalid @enderror" value="" name="text_ar"  id="text_ar" placeholder="{{ __('admin/app.text_ar') }}">{{ $row->getTranslation('text', 'ar') }}</textarea>
+										<textarea class="form-control @error('text_ar') is-invalid @enderror" name="text_ar"  id="text_ar" placeholder="{{ __('admin/app.text_ar') }}">{{ $row->getTranslation('text', 'ar') }}</textarea>
                                         @error('text_ar')
                                         <div class="alert alert-danger">{{$message}}</div>
                                         @enderror
@@ -63,7 +63,7 @@
                                         @endif
                                     </div>
 									<div class="col-lg-8">
-                                        <input type="file" class="form-control" name="photo" aria-label="file example" required accept="image/*" >
+                                        <input type="file" class="form-control" name="photo" aria-label="file example" accept="image/*" >
 									</div>
 
 									<div class="col-12">

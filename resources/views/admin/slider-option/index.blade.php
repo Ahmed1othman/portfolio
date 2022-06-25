@@ -1,6 +1,6 @@
 @extends('layouts.admin.master')
 @section('title')
-    {{trans('admin/slider-option.slider-option')}}
+    {{trans('admin/app.slider-option')}}
 @endsection
 @section('content')
     <div class="page-wrapper">

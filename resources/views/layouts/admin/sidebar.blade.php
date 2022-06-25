@@ -41,7 +41,7 @@
                 <li><a href="{{ route('sliders.index') }}"><i class="bx bx-right-arrow-alt"></i>{{ __('admin/app.sliders') }}</a></li>
 
                 <li><a href="{{ route('navbar.index') }}"><i class="bx bx-right-arrow-alt"></i>{{ __('admin/app.navbar') }}</a></li>
-                <li><a href="{{ route('subscription.index') }}"><i class="bx bx-right-arrow-alt"></i>{{ __('admin/app.sbscriptions') }}</a></li>
+                <li><a href="{{ route('subscription.index') }}"><i class="bx bx-right-arrow-alt"></i>{{ __('admin/app.subscriptions') }}</a></li>
                 <li><a href="{{ route('contacts') }}"><i class="bx bx-right-arrow-alt"></i>{{ __('admin/app.contacts') }}</a></li>
             </ul>
         </li>
@@ -57,8 +57,6 @@
                 <li><a href="{{ route('info.index') }}"><i class="bx bx-right-arrow-alt"></i>{{ __('admin/app.website_info') }}</a></li>
                 <li><a href="{{ route('slider-option') }}"><i class="bx bx-right-arrow-alt"></i>{{ __('admin/app.slider-option') }}</a></li>
                 <li><a href="{{ route('front-sections.index') }}"><i class="bx bx-right-arrow-alt"></i>{{ __('admin/app.control_front') }} </a></li>
-                <li><a href="{{ route('custom-page.index') }}"><i class="bx bx-right-arrow-alt"></i>{{ __('admin/app.custom_page') }} </a></li>
-
             </ul>
         </li>
 

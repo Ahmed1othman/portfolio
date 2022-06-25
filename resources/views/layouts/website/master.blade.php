@@ -9,7 +9,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}" />
     <link rel="icon" href="">
     @yield('meta')
-   <title>@yield('title') {{ websiteInfo_hlp('website_name') }}</title>
+   <title>@yield('title') - {{ websiteInfo_hlp('website_name_'.app()->getLocale())}}</title>
 
     @include('layouts.website.header')
 

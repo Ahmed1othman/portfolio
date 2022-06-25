@@ -1,4 +1,7 @@
 @extends('layouts.admin.master')
+@section('title')
+    {{__('admin/app.homepage')}}
+@endsection
 @section('content')
 <div class="page-wrapper">
     <div class="page-content">
@@ -22,6 +25,30 @@
                             <div class="me-auto">
                                 <p class="mb-0 text-white">{{__('admin/app.total_features')}}</p>
                                 <h4 class="my-1 text-white">{{\App\Models\feature::count()}}</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card radius-10 bg-gradient-ohhappiness">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center">
+                            <div class="me-auto">
+                                <p class="mb-0 text-white">{{__('admin/app.total_contacts')}}</p>
+                                <h4 class="my-1 text-white">{{\App\Models\ContactUs::count()}}</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card radius-10 bg-gradient-ohhappiness">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center">
+                            <div class="me-auto">
+                                <p class="mb-0 text-white">{{__('admin/app.total_subscriptions')}}</p>
+                                <h4 class="my-1 text-white">{{\App\Models\Subscription::count()}}</h4>
                             </div>
                         </div>
                     </div>
