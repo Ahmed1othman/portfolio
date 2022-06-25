@@ -61,6 +61,9 @@
     .tp-bgimg{
         filter: blur(2px) brightness(0.8);
     }
+    .t1-b-1 {
+        font-family: Cairo;
+    }
 </style>
 <link rel="stylesheet" type="text/css" href="{{asset('admin/assets/css/coloris.min.css')}}">
 
@@ -74,4 +77,5 @@
         CKEDITOR.add
     }
     ckeditor()
+
 </script>

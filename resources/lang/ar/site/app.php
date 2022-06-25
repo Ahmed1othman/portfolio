@@ -45,6 +45,6 @@ return [
     'why_choose_us' => 'لماذا تختارنا؟',
     'Leave_your_information' => 'اترك بياناتك والبريد الالكتروني لك. وسوف نتواصل معك في اسرع وقت.',
     'Request A Call Back' => 'تريد منا التواصل معك ؟',
-
+    'Request A Call Back' => 'تريد منا التواصل معك ؟',
 
 ];

@@ -2457,7 +2457,7 @@ input.num-product::-webkit-inner-spin-button {
 [ L-Text >= 26 ]*/
 
 .t1-b-1 {
-    font-family: Roboto-Bold;
+    /*font-family: Roboto-Bold;*/
     font-size: 36px;
     line-height: 1.2;
     letter-spacing: 1px;
@@ -2470,7 +2470,8 @@ input.num-product::-webkit-inner-spin-button {
 }
 
 .t1-b-3 {
-    font-family: Roboto-Medium;
+    /*font-family: Roboto-Medium;*/
+    font-family: 'Cairo';
     font-size: 30px;
     line-height: 1.2;
 }
