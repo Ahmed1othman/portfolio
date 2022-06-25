@@ -44,5 +44,6 @@ return [
     'Submit' => 'Submit',
     'Phone Number' => 'Phone Number',
     'notifications_email'=>'Notifications Email',
-    'portfolio_pdf'=>'',
+    'portfolio_pdf'=>'Profile',
+    'services_details' => 'Services Details',
 ];
