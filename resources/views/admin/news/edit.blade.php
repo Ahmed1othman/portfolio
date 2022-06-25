@@ -17,7 +17,7 @@
 
                         <div class="col">
                             <label class="mb-2">{{trans('admin/news.new_name')}}</label>
-                            <input type="text" name="title" class="form-control @error('title') is-invalid @enderror" value="{{ $data->getTranslation('title', 'en') }}}">
+                            <input type="text" name="title" class="form-control @error('title') is-invalid @enderror" value="{{ $data->getTranslation('title', 'en') }}">
                             @error('title')
                             <div class="alert alert-danger">{{$Message}}</div>
                             @enderror
@@ -26,7 +26,7 @@
 
                         <div class="col">
                             <label class="mb-2">{{trans('admin/news.new_name_ar')}}</label>
-                            <input type="text" name="title_ar" class="form-control @error('title_ar') is-invalid @enderror" value="{{ $data->getTranslation('title', 'ar') }}}">
+                            <input type="text" name="title_ar" class="form-control @error('title_ar') is-invalid @enderror" value="{{ $data->getTranslation('title', 'ar') }}">
                             @error('title_ar')
                             <div class="alert alert-danger">{{$Message}}</div>
                             @enderror

@@ -46,4 +46,5 @@ return [
     'notifications_email'=>'Notifications Email',
     'portfolio_pdf'=>'Profile',
     'services_details' => 'Services Details',
+    'projects_details' => 'Projects Details',
 ];

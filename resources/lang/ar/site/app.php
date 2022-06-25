@@ -47,5 +47,6 @@ return [
     'Request A Call Back' => 'تريد منا التواصل معك ؟',
     'Request A Call Back' => 'تريد منا التواصل معك ؟',
     'services_details' => 'تفاصيل الخدمات',
+    'projects_details' => 'تفاصيل المشاريع',
 
 ];
