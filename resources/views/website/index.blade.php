@@ -13,8 +13,7 @@
 
                         <li data-transition="{{ $slideroption->image }}">
                             <img src="{{ asset($slider->image)}}" alt="IMG-SLIDE" class="rev-slidebg" style="">
-                            <h2 class="tp-caption tp-resizeme caption-1 text-uppercase" style="text-shadow: 4px 2px #000022;
-                                font-weight: 900;font-family: {{ websiteInfo_hlp('font_family') }};"
+                            <h2 class="tp-caption tp-resizeme caption-1 text-uppercase" style="text-shadow: 2px 2px #000033;font-family: {{ websiteInfo_hlp('font_family') }};"
                                 data-frames='[{"delay":500,"speed":1500,"frame":"0","from":"{{ $slideroption->word }};","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
                                 data-visibility="['on', 'on', 'on', 'on']" data-fontsize="['48', '48', '48', '38']"
                                 data-lineheight="['58', '58', '58', '58']" data-color="['#FFF']"
