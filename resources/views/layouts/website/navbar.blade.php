@@ -11,6 +11,8 @@
          width: 90%;
          display: inline-block;
          vertical-align: middle;
+
+         text-shadow: 0px 2px 2px #b3b3b3;
      }
 
      .fix-menu-desktop .wrap-menu-desktop{

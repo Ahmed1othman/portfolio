@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="description" content="this my acount to my son" />
-    <meta name="keywords" content="Html,css,utf,javascript" />
+    <meta name="keywords" content="الصيهد الوسطى,صيهد الوسطى للمقاولات العامة والعزل الحديث,صيهد الوسطي العوازل,صيهد الوسطى للمقاولات,صيهد الوسطى للمقاولات العامة والعزل الحديث,العزل الحديث,العزل الحراري,العزل المائي,عزل مائي حراري,عزل خزانات اسطح,عزل خزانات,عزل اسطح,عزل حمامات,عزل فوم,عزل حديث,عوازل,شركة العازل,شركة للعوازل,شركة عزل بالرياض,عزل لفائف بيتومين,عزل ايبوكسي,Saihad general,Saihad construction,مقاول عزل,مقاولات الرياض,افضل شركة عوازل,فوم,عزل فوم,افضل اسعار عزل الحوائط,افضل الاسعار,عزل فوري,تواصل سريع,افضل انواع الفوم,افضل انواع العزل,عزل حوائط واسقف,عوازل الصيهد,الصيهد,صيهد" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="csrf-token" content="{{ csrf_token() }}" />
     <link rel="icon" href="">
