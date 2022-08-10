@@ -14,15 +14,18 @@ use App\Models\Service;
 use App\Models\SliderOption;
 use App\Models\Slider;
 use App\Models\Subscription;
+use Artesaos\SEOTools\SEOMeta;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Response;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Validator;
+use Artesaos\SEOTools\Traits\SEOTools as SEOToolsTrait;
 
 class HomeController extends Controller
 {
+    use SEOToolsTrait;
     /**
      * Display a listing of the resource.
      *
@@ -46,6 +49,18 @@ class HomeController extends Controller
             'projects' => project::whereActive(1)->orderByDesc('id')->limit(3)->get(),
             'news' => news::whereActive(1)->orderByDesc('id')->limit(3)->get(),
         ];
+
+        $this->seo()->setTitle('صيهد الوسطي - الصفحة الرئيسية');
+
+
+        //seo meta tags for home page using seotools package
+        $this->seo()->setDescription('صيهد الوسطي - الصفحة الرئيسية');
+        $this->seo()->setCanonical(url('/'));
+        $this->seo()->opengraph()->setUrl(url('/'));
+        $this->seo()->opengraph()->addProperty('type', 'website');
+        $this->seo()->twitter()->setSite('@LuizVinicius73');
+
+
 
         return view('website.index', $date);
     }

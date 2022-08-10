@@ -1,7 +1,4 @@
 @extends('layouts.website.master')
-@section('title')
-   {{__('site/app.home')}}
-@endsection
 @section('content')
     <!-- Slide -->
     <section class="slider {{ showSection_hlp('slider') }}"style="font-family: {!! websiteInfo_hlp('font_family') !!};">

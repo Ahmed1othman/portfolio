@@ -75,7 +75,7 @@
                 </div>
 
                 <div class="col-sm-8 col-md-4 col-lg-3 p-b-20">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3627.223320772176!2d46.71721741499797!3d24.6159867841698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9be3eaac4fea86c8!2zMjTCsDM2JzU3LjYiTiA0NsKwNDMnMDkuOSJF!5e0!3m2!1sen!2seg!4v1656158240779!5m2!1sen!2seg" width="350" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3623.70230284269!2d46.662416715000425!3d24.737098584112296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x837cee8dce08f3a1!2zMjTCsDQ0JzEzLjYiTiA0NsKwMzknNTIuNiJF!5e0!3m2!1sen!2seg!4v1660079021243!5m2!1sen!2seg" width="350" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>
