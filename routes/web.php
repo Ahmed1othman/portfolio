@@ -4,6 +4,7 @@ use App\Http\Controllers\Website\HomeController;
 use Illuminate\Support\Facades\Route;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 use App\Http\Controllers\effects;
+use Spatie\Sitemap\SitemapGenerator;
 
 /*
 |--------------------------------------------------------------------------
@@ -82,3 +83,6 @@ Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => ['lo
 
 
 Route::get("users",[effects::class,"list"]);
+Route::get("sitemap",function (){
+    SitemapGenerator::create('/')->writeToFile('sitemap.xml');
+});

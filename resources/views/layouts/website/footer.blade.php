@@ -1,19 +1,26 @@
-<footer >
-    <div class="parallax100 kit-overlay1 p-t-35 p-b-10 {{ showSection_hlp('footer') }}" style="background-image: url({{ asset('storage/front/'.websiteInfo_hlp('footer_image'))}});">
-        <div class="container">
-            <div class="row justify-content-center justify-content-md-start">
-                <div class="col-sm-8 col-md-4 col-lg-3 p-b-20">
+<div class="col-sm-12 col-md-12 col-lg-12">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3623.70230284269!2d46.662416715000425!3d24.737098584112296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x837cee8dce08f3a1!2zMjTCsDQ0JzEzLjYiTiA0NsKwMzknNTIuNiJF!5e0!3m2!1sen!2seg!4v1660079021243!5m2!1sen!2seg" width="100%" height="400px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
 
-                   <div class="size-h-1 flex-s-e p-b-6 m-b-18">
-                       <a href="{{route('home')}}">
-                           <img class="max-s-full" src="{{ asset('storage/front/' . websiteInfo_hlp('logo_'.App::getLocale())) }}" alt="{{ websiteInfo_hlp('website_name_'.App::getLocale()) }}">
+
+<footer >
+    <div class="justify-content-center parallax100 kit-overlay1 p-t-35 p-b-10 {{ showSection_hlp('footer') }}" style="background-image: url({{ asset('storage/front/'.websiteInfo_hlp('footer_image'))}});">
+        <div class="container text-center justify-content-center">
+            <div class="row text-center justify-content-center">
+                <div class="col-sm-12 col-md-12 col-lg-12 p-b-20 justify-content-center">
+                   <div class="size-h-2 p-b-6 m-b-18 justify-content-center">
+                       <a href="{{route('home')}}" style="display: block;margin-bottom: 10px" >
+                           <h2 style="color: white;font-size: 25px">
+                               {{ websiteInfo_hlp('website_name_'.app()->getLocale()) }}
+                           </h2>
                        </a>
+                       <p style="color: #ccc">
+                           {{websiteInfo_hlp('about_us_'.app()->getLocale())}}
+                       </p>
                    </div>
 
-                   <div>
-
-
-                       <div class="flex-wr-s-c p-t-10">
+                   <div class="justify-content-center">
+                       <div class="flex-wr-s-c p-t-10 justify-content-center">
                            <a href="{{ websiteInfo_hlp('fb_link') }}" class="flex-c-c size-a-7 borad-50per bg-11 fs-16 cl-0 hov-btn2 trans-02 m-r-10">
                                <i class="fa fa-facebook"></i>
                            </a>
@@ -34,15 +41,15 @@
                     </div>
                 </div>
 
-                <div class="col-sm-8 col-md-4 p-b-20">
-                    <div class="size-h-1 flex-s-e m-b-18">
+                <div class="col-sm-12 col-md-12 p-b-20 justify-content-center">
+                    <div class="size-h-1 flex-s-e m-b-18 justify-content-center">
                         <h4 class="t1-m-3 text-uppercase cl-0">
                             {{__('site/app.contact_us')}}
                         </h4>
                     </div>
 
-                    <ul>
-                        <li class="flex-wr-s-s t1-s-2 cl-13 p-b-9">
+                    <ul class="justify-content-center text-center txt-center">
+                        <li class="t1-s-2 cl-13 p-b-9 justify-content-center">
                             <span class="size-w-3">
                                 <i class="fa fa-home" aria-hidden="true"></i>
                             </span>
@@ -52,7 +59,7 @@
                             </span>
                         </li>
 
-                        <li class="flex-wr-s-s t1-s-2 cl-13 p-b-9">
+                        <li class=" t1-s-2 cl-13 p-b-9">
                             <span class="size-w-3">
                                 <i class="fa fa-envelope-o" aria-hidden="true"></i>
                             </span>
@@ -62,7 +69,7 @@
                             </span>
                         </li>
 
-                        <li class="flex-wr-s-s t1-s-2 cl-13 p-b-9">
+                        <li class=" t1-s-2 cl-13 p-b-9">
                             <span class="size-w-3">
                                 <i class="fa fa-phone" aria-hidden="true"></i>
                             </span>
@@ -72,10 +79,6 @@
                             </span>
                         </li>
                     </ul>
-                </div>
-
-                <div class="col-sm-8 col-md-4 col-lg-3 p-b-20">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3623.70230284269!2d46.662416715000425!3d24.737098584112296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x837cee8dce08f3a1!2zMjTCsDQ0JzEzLjYiTiA0NsKwMzknNTIuNiJF!5e0!3m2!1sen!2seg!4v1660079021243!5m2!1sen!2seg" width="350" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>

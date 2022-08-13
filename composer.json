@@ -13,6 +13,7 @@
         "laravel/sanctum": "^2.11",
         "laravel/tinker": "^2.5",
         "mcamara/laravel-localization": "^1.6",
+        "spatie/laravel-sitemap": "^6.2",
         "spatie/laravel-translatable": "^4.6"
     },
     "require-dev": {
