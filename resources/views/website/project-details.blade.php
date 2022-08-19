@@ -26,9 +26,9 @@
 <section class="bg-0 p-t-84 p-b-100">
     <div class="container">
         <div class="flex-wr-sb-c bo-b-1 bcl-12 p-b-12 m-b-24">
-            <h3 class="t1-b-3 cl-3 m-r-30 m-tb-10">
+            <h1 class="t1-b-3 cl-3 m-r-30 m-tb-10 h3">
                 {{ $row->title }}
-            </h3>
+            </h1>
 
         </div>
 

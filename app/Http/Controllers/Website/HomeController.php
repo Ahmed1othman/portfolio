@@ -75,6 +75,17 @@ class HomeController extends Controller
     public function projectDetails($id)
     {
         $row = project::find($id);
+        $this->seo()->setTitle('المشاريع - '.$row->title);
+        $this->seo()->setDescription('شركة صيهد العامة للمقاولات واعمال العزل, هي واحدة من اهم وافضل الشركات في هذا المجال في الرياض');
+        $this->seo()->opengraph()->addImage(asset($row->image));
+        $this->seo()->setCanonical(url('/'));
+        $this->seo()->opengraph()->setUrl(url('/'));
+        $this->seo()->opengraph()->addProperty('type', 'website');
+        $this->seo()->opengraph()->addProperty('locale', 'ar_AR');
+        $this->seo()->opengraph()->addProperty('locale:alternate', ['ar_AR', 'en_US']);
+        $this->seo()->opengraph()->setTitle('المشاريع | '.$row->title);
+        $this->seo()->opengraph()->setDescription('شركة صيهد العامة للمقاولات واعمال العزل, هي واحدة من اهم وافضل الشركات في هذا المجال في الرياض');
+
         return view('website.project-details', compact('row'));
     }
     public function siteservices()
@@ -85,6 +96,17 @@ class HomeController extends Controller
     public function serviceDetails($id)
     {
         $row = service::find($id);
+        $this->seo()->setTitle('الخدمات - '.$row->title);
+        $this->seo()->setDescription('شركة صيهد العامة للمقاولات واعمال العزل, هي واحدة من اهم وافضل الشركات في هذا المجال في الرياض');
+        $this->seo()->opengraph()->addImage(asset($row->image));
+        $this->seo()->setCanonical(url('/'));
+        $this->seo()->opengraph()->setUrl(url('/'));
+        $this->seo()->opengraph()->addProperty('type', 'website');
+        $this->seo()->opengraph()->addProperty('locale', 'ar_AR');
+        $this->seo()->opengraph()->addProperty('locale:alternate', ['ar_AR', 'en_US']);
+        $this->seo()->opengraph()->setTitle('الخدمات | '.$row->title);
+        $this->seo()->opengraph()->setDescription($row->notes);
+
         return view('website.service-details', compact('row'));
     }
     public function customPage($slug)
@@ -148,8 +170,6 @@ class HomeController extends Controller
 
     public function contactus(Request $request)
     {
-
-
             $orders = new ContactUs();
             $orders->name = $request->name;
             $orders->email = $request->email;
