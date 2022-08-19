@@ -50,7 +50,7 @@ class HomeController extends Controller
             'news' => news::whereActive(1)->orderByDesc('id')->limit(3)->get(),
         ];
 
-        $this->seo()->setTitle('صيهد الوسطي - الصفحة الرئيسية');
+        $this->seo()->setTitle('الصفحة الرئيسية');
         //seo meta tags for home page using seotools package
         $this->seo()->setDescription('شركة صيهد العامة للمقاولات واعمال العزل, هي واحدة من اهم وافضل الشركات في هذا المجال في الرياض');
         $this->seo()->opengraph()->addImage(asset('images/logo.png'));
