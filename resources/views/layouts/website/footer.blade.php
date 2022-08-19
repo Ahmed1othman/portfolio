@@ -15,7 +15,7 @@
                            </h2>
                        </a>
                        <p style="color: #ccc">
-                           {{websiteInfo_hlp('about_us_'.app()->getLocale())}}
+                           {!! websiteInfo_hlp('about_us_'.app()->getLocale()) !!}
                        </p>
                    </div>
 
