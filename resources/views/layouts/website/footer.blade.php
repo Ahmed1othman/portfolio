@@ -14,9 +14,6 @@
                                {{ websiteInfo_hlp('website_name_'.app()->getLocale()) }}
                            </h2>
                        </a>
-                       <p style="color: #ccc">
-                           {!! websiteInfo_hlp('about_us_'.app()->getLocale()) !!}
-                       </p>
                    </div>
 
                    <div class="justify-content-center">
