@@ -51,7 +51,7 @@ class HomeController extends Controller
         ];
 
         $this->seo()->setTitle('الصفحة الرئيسية');
-        $this->seo()->metatags('keywords', 'sihadgeneral - sihad - sihad alwosta - awazel - best - the best - عزل فوم - عزل مائي - كشف تسربات المياه - تنظيف منازل - عزل شينكو - عزل حراري - عزل اسطح - صيهد العامة للمقاولات واعمال العزل');
+        //$this->seo()->metatags('keywords', 'sihadgeneral - sihad - sihad alwosta - awazel - best - the best - عزل فوم - عزل مائي - كشف تسربات المياه - تنظيف منازل - عزل شينكو - عزل حراري - عزل اسطح - صيهد العامة للمقاولات واعمال العزل');
         //seo meta tags for home page using seotools package
         $this->seo()->setDescription('شركة صيهد العامة للمقاولات واعمال العزل, هي واحدة من اهم وافضل الشركات في هذا المجال في الرياض');
         $this->seo()->opengraph()->addImage(asset('images/logo.png'));

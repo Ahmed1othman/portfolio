@@ -13,7 +13,7 @@ return [
             'titleBefore'  =>'صيهد العامة', // Put defaults.title before page title, like 'It's Over 9000!  Dashboard'
             'description'  => 'شركة الصيهد العامة تقدم خصومات هائلة تصلي الي 40% حيث انها تخصصت في وكشف تسربات المياه في كل انحاء المملكة وكافة انواع العزل عزل الفوم عزل مائي عزل حراري عزل شينكو شركة صيهد العامة للمقاولات واعمال العزل, هي واحدة من اهم وافضل الشركات في هذا المجال في الرياض', // set false to total remove
             'separator'    => ' - ',
-            'keywords'     => ['sihadgeneral sihad sihad alwosta awazel best the best عزل فوم عزل مائي كشف تسربات المياه تنظيف منازل عزل شينكو عزل حراري عزل اسطح صيهد العامة للمقاولات واعمال العزل'],
+            'keywords'     => ['sihadgeneral, sihad, sihad, alwosta, awazel, best, the best, عزل فوم عزل مائي, كشف تسربات المياه, تنظيف منازل ,عزل شينكو ,عزل حراري عزل ,اسطح صيهد ,العامة للمقاولات واعمال العزل'],
             'canonical'    => 'full', // Set to null or 'full' to use Url::full(), set to 'current' to use Url::current(), set false to total remove
             'robots'       => 'all', // Set to 'all', 'none' or any combination of index/noindex and follow/nofollow
         ],
