@@ -91,6 +91,19 @@ class HomeController extends Controller
     public function siteservices()
     {
         $data = Service::whereActive(1)->orderByDesc('id')->get();
+        $this->seo()->setTitle('خدمات صيهد الوسطي');
+        $this->seo()->metatags()->setKeywords(['صيهد العامة لعزل الاسطح','عزل مائي','عزل اسطح','فوم','افضل انواع العوازل']);
+        //seo meta tags for home page using seotools package
+        $this->seo()->setDescription('شركة صيهد العامة للمقاولات واعمال العزل, هي واحدة من اهم وافضل الشركات في هذا المجال في الرياض');
+        $this->seo()->opengraph()->addImage(asset('images/logo.png'));
+        $this->seo()->setCanonical(url('/'));
+        $this->seo()->opengraph()->setUrl(url('/'));
+        $this->seo()->opengraph()->addProperty('type', 'website');
+        $this->seo()->opengraph()->addProperty('locale', 'ar_AR');
+        $this->seo()->opengraph()->addProperty('locale:alternate', ['ar_AR', 'en_US']);
+        $this->seo()->opengraph()->setTitle('صيهد الوسطي - الصفحة الرئيسية');
+        $this->seo()->opengraph()->setDescription('شركة صيهد العامة للمقاولات واعمال العزل, هي واحدة من اهم وافضل الشركات في هذا المجال في الرياض');
+
         return view('website.services', compact('data'));
     }
     public function serviceDetails($id)
