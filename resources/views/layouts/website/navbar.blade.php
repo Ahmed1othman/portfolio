@@ -150,7 +150,9 @@
                  <a href="{{route('home')}}"><img src="{{ asset('storage/front/' . websiteInfo_hlp('logo_'.App::getLocale())) }}" alt="LOGO" style="{{App::getLocale()=='ar'? 'right:0;left:100%':''}}"></a>
              </div>
          @else
-                 <a href="{{route('home')}}"><img src="" alt="LOGO" style="{{App::getLocale()=='ar'? 'right:0;left:100%':''}}">{{websiteInfo_hlp('website_name_'.App::getLocale())}}</a>
+                 <div class="logo-mobile">
+                     <h1><a href="{{route('home')}}">{{websiteInfo_hlp('website_name_'.App::getLocale())}}</a></h1>
+                 </div>
          @endif
              <!-- Button show menu -->
              <div class="btn-show-menu-mobile hamburger hamburger--squeeze">
