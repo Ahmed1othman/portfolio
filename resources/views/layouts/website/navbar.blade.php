@@ -145,9 +145,13 @@
      <nav class="container-header-mobile">
          <div class="wrap-header-mobile">
              <!-- Logo moblie -->
-             <div class="logo-mobile">
+             @if (websiteInfo_hlp('logo_'.App::getLocale()) && websiteInfo_hlp('show_logo'))
+                <div class="logo-mobile">
                  <a href="{{route('home')}}"><img src="{{ asset('storage/front/' . websiteInfo_hlp('logo_'.App::getLocale())) }}" alt="LOGO" style="{{App::getLocale()=='ar'? 'right:0;left:100%':''}}"></a>
              </div>
+         @else
+                 <a href="{{route('home')}}"><img src="" alt="LOGO" style="{{App::getLocale()=='ar'? 'right:0;left:100%':''}}">{{websiteInfo_hlp('website_name_'.App::getLocale())}}</a>
+         @endif
              <!-- Button show menu -->
              <div class="btn-show-menu-mobile hamburger hamburger--squeeze">
                  <span class="hamburger-box">
@@ -157,7 +161,7 @@
          </div>
 
          <div class="menu-mobile">
-             <ul class="top-bar-m p-l-20 p-tb-8">
+             <ul class="top-bar-m p-l-20 p-tb-8 justify-content-center">
                  <li>
                      <div class="t1-s-1 cl-5 p-tb-3">
                          <span class="fs-16 m-r-6">
@@ -179,20 +183,20 @@
 
                  <li>
                      <div>
-                         <a href="#" class="fs-16 cl-5 hov-link2 trans-02 m-r-15">
-                             <i class="fa fa-facebook-official">{{ websiteInfo_hlp('facebook_link') }}</i>
+                         <a href="{{ websiteInfo_hlp('facebook_link') }}" class="fs-16 cl-5 hov-link2 trans-02 m-r-15">
+                             <i class="fa fa-facebook-official"></i>
                          </a>
 
-                         <a href="#" class="fs-16 cl-5 hov-link2 trans-02 m-r-15">
-                             <i class="fa fa-twitter">{{ websiteInfo_hlp('twitter_link') }}</i>
+                         <a href="{{ websiteInfo_hlp('twitter_link') }}" class="fs-16 cl-5 hov-link2 trans-02 m-r-15">
+                             <i class="fa fa-twitter"></i>
                          </a>
 
-                         <a href="#" class="fs-16 cl-5 hov-link2 trans-02 m-r-15">
-                             <i class="fa fa-instagram">{{ websiteInfo_hlp('instagram_link') }}</i>
+                         <a href="{{ websiteInfo_hlp('instagram_link') }}" class="fs-16 cl-5 hov-link2 trans-02 m-r-15">
+                             <i class="fa fa-instagram"></i>
                          </a>
 
-                         <a href="#" class="fs-16 cl-5 hov-link2 trans-02 m-r-15">
-                             <i class="fa fa-linkedin">{{ websiteInfo_hlp('linked_link') }}</i>
+                         <a href="{{ websiteInfo_hlp('linked_link') }}" class="fs-16 cl-5 hov-link2 trans-02 m-r-15">
+                             <i class="fa fa-linkedin"></i>
                          </a>
                      </div>
                  </li>
